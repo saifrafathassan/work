@@ -18,7 +18,7 @@ const Content = ({ t }) => {
       </div>
 
       {/* الفيديو */}
-      <div className="w-full md:w-2/3 lg:w-1/2">
+      <div className="w-full md:w-2/3 lg:w-2/2">
         <video
           src={VideoSrc}
           autoPlay
