@@ -16,8 +16,8 @@ i18n
     load: 'languageOnly', 
     detection: {
       order: [
-        'cookie',
         'htmltag',
+        'cookie',
         'localStorage',
         'sessionStorage',
         'navigator',
