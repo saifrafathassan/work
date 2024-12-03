@@ -71,13 +71,13 @@ const scrollTo = () => {
                 </div>
                 <div className="space-y-6 border-t border-gray-200 px-8 py-6 flex flex-col">
                   
-                <Link to={'/allproducts'} className="text-md font-medium ps-2 text-gray-700 duration-300 hover:text-main hover:scale-110" >
+                <Link to={'/About'} className="text-md font-medium ps-2 text-gray-700 duration-300 hover:text-main hover:scale-110" >
                 {t('About')}
                   </Link>
-                  <Link to={'/allproducts'} className="text-md font-medium ps-2 text-gray-700 duration-300 hover:text-main hover:scale-110" >
+                  <Link to={'/contact'} className="text-md font-medium ps-2 text-gray-700 duration-300 hover:text-main hover:scale-110" >
                   {t('Contact')}
                   </Link>
-                  <Link to={'/allproducts'} className="text-md font-medium ps-2 text-gray-700 duration-300 hover:text-main hover:scale-110" >
+                  <Link to={'/products'} className="text-md font-medium ps-2 text-gray-700 duration-300 hover:text-main hover:scale-110" >
                   {t('Products')}
                   </Link>
 
@@ -122,13 +122,13 @@ const scrollTo = () => {
               <div className="ml-auto flex items-center pt-5">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
 
-                  <Link to={'/allproducts'} className="text-md font-medium text-white duration-300 hover:scale-110" >
+                  <Link to={'/About'} className="text-md font-medium text-white duration-300 hover:scale-110" >
                     {t('About')}
                   </Link>
-                  <Link to={'/allproducts'} className="text-md font-medium text-white duration-300 hover:scale-110" >
+                  <Link to={'/products'} className="text-md font-medium text-white duration-300 hover:scale-110" >
                     {t('Products')}
                   </Link>
-                  <Link to={'/allproducts'} className="text-md font-medium text-white duration-300 hover:scale-110" >
+                  <Link to={'/contact'} className="text-md font-medium text-white duration-300 hover:scale-110" >
                     {t('Contact')}
                   </Link>
                   

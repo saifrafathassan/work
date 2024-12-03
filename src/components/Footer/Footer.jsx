@@ -25,7 +25,7 @@ function Footer({ t }) {
       </h2>
       <nav className="list-none mb-10">
         <li>
-          <Link to={'/returnpolicy'} className="text-white hover:text-gray-300">
+          <Link to={'/'} className="text-white hover:text-gray-300">
             {t('Home')}
           </Link>
         </li>
@@ -35,7 +35,7 @@ function Footer({ t }) {
           </Link>
         </li>
         <li>
-          <Link to={'/about'} className="text-white hover:text-gray-300">
+          <Link to={'/products'} className="text-white hover:text-gray-300">
             {t('Products')}
           </Link>
         </li>

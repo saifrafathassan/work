@@ -70,7 +70,7 @@ return (
         <h2 className="text-white text-2xl sm:text-4xl font-bold">{slide.text}</h2>
       </div>
       <img 
-        className='w-[70%] h-[300px] sm:w-[70%] sm:h-[400px] object-contain mx-auto' 
+        className='w-[70%] h-[300px] sm:w-[70%] sm:h-[500px] object-contain mx-auto' 
         src={slide.image} 
         alt={`heroimg${index}`} 
       />
