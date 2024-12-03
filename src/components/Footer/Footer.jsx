@@ -25,22 +25,22 @@ function Footer({ t }) {
       </h2>
       <nav className="list-none mb-10">
         <li>
-          <Link to={'/'} className="text-white hover:text-gray-300">
+          <Link to={'/'}  aria-label="Home page" className="text-white hover:text-gray-300">
             {t('Home')}
           </Link>
         </li>
         <li>
-          <Link to={'/about'} className="text-white hover:text-gray-300">
+          <Link to={'/about'} aria-label="Learn more about us" className="text-white hover:text-gray-300">
             {t('About')}
           </Link>
         </li>
         <li>
-          <Link to={'/products'} className="text-white hover:text-gray-300">
+          <Link to={'/products'} aria-label="Our Products" className="text-white hover:text-gray-300">
             {t('Products')}
           </Link>
         </li>
         <li>
-          <Link to={'/contact'} className="text-white hover:text-gray-300">
+          <Link to={'/contact'} aria-label="Contact us" className="text-white hover:text-gray-300">
             {t('Contact')}
           </Link>
         </li>

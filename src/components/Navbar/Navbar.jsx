@@ -112,7 +112,7 @@ const scrollTo = () => {
 
               {/* Logo */}
               <div className="ml-4 lg:ml-8">
-                <Link to={'/'} className='flex'>
+                <Link aria-label="Home page - Main Navigation" to={'/'} className='flex'>
                   <div className=" pt-5">
                     <img className="object-cover h-20" src={Logo} alt="" />
                   </div>
@@ -122,13 +122,13 @@ const scrollTo = () => {
               <div className="ml-auto flex items-center pt-5">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
 
-                  <Link to={'/About'} className="text-md font-medium text-white duration-300 hover:scale-110" >
+                  <Link aria-label="About Us - Main Navigation" to={'/About'} className="text-md font-medium text-white duration-300 hover:scale-110" >
                     {t('About')}
                   </Link>
-                  <Link to={'/products'} className="text-md font-medium text-white duration-300 hover:scale-110" >
+                  <Link aria-label="Products - Main Navigation" to={'/products'} className="text-md font-medium text-white duration-300 hover:scale-110" >
                     {t('Products')}
                   </Link>
-                  <Link to={'/contact'} className="text-md font-medium text-white duration-300 hover:scale-110" >
+                  <Link aria-label="Contact us - Main Navigation" to={'/contact'} className="text-md font-medium text-white duration-300 hover:scale-110" >
                     {t('Contact')}
                   </Link>
                   
@@ -148,7 +148,7 @@ const scrollTo = () => {
         </nav>
       </header>
       {showButton && (
-        <button className='bg-main flex justify-center items-center rounded-full h-[50px] w-[50px] fixed right-0 bottom-0 mb-[20px] sm:mb-[40px] mr-[30px] sm:mr-[40px] z-[1000] hover:bg-white duration-300 hover:border-black border-white border-2' onClick={scrollTo}>
+        <button aria-label="Scrool to top" className='bg-main flex justify-center items-center rounded-full h-[50px] w-[50px] fixed right-0 bottom-0 mb-[20px] sm:mb-[40px] mr-[30px] sm:mr-[40px] z-[1000] hover:bg-white duration-300 hover:border-black border-white border-2' onClick={scrollTo}>
           <IoIosArrowUp className="text-white hover:text-black duration-300" size={30}/>
         </button>
       )}
