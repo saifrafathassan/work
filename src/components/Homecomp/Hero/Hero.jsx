@@ -66,7 +66,7 @@ return (
 <Slider ref={sliderRef} {...settings}>
   {slides.map((slide, index) => (
     <div key={index} className='relative pt-20 md:pt-36'>
-      <div className="absolute top-0 left-0 w-full text-center py-4">
+      <div className="absolute top-0 left-3 w-full text-center pt-14">
         <h2 className="text-white text-2xl sm:text-4xl font-bold">{slide.text}</h2>
       </div>
       <img 
