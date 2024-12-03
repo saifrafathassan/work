@@ -76,11 +76,11 @@ function Footer({ t }) {
                 <div className="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
                     <Link to={'/'} className='flex'>
                         <div className="flex ">
-                            <h1 className=' text-2xl font-bold text-transparent bg-clip-text bg-white px-2 pb-1 rounded' >{t('SIVIN STEEL')}</h1>
+                            <h1 className=' text-2xl font-bold text-transparent bg-clip-text bg-white px-2 pb-1 rounded' >SIVIN STEEL</h1>
                         </div>
                     </Link>
-                    <p className="text-[12px] sm:text-sm flex items-center gap-1 text-gray-200 sm:ms-6 sm:mt-0 mt-4" >{t('© 2023 SIVIN STEEL — ')}
-                        {t('Created By')} {t('By Saif Rafat')}
+                    <p className="text-[12px] sm:text-sm flex items-center gap-1 text-gray-200 sm:ms-6 sm:mt-0 mt-4" >© 2023 SIVIN STEEL — 
+                        Created By By Saif Rafat
                     </p>
                     <span className="inline-flex sm:ms-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                         <a  className="text-white">
