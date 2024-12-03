@@ -53,15 +53,15 @@ function Footer({ t }) {
     {t('Contact')}
   </h2>
   <nav className="list-none mb-10">
-    <li className="flex items-center justify-center md:justify-start text-white">
+    <li className="flex items-center justify-center md:justify-start gap-1 text-white">
       <FiPhone className="mr-2 text-lg" />
       <span>0224949473</span>
     </li>
-    <li className="flex items-center justify-center md:justify-start text-white py-2">
+    <li className="flex items-center justify-center md:justify-start gap-1 text-white py-2">
       <FaLocationDot className="mr-2 text-lg" />
       <span>{t('location1')}</span>
     </li>
-    <li className="flex items-center justify-center md:justify-start text-white">
+    <li className="flex items-center justify-center md:justify-start gap-1 text-white">
       <FaLocationDot className="mr-2 text-lg" />
       <span>{t('location2')}</span>
     </li>
