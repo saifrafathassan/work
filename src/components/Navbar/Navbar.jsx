@@ -122,7 +122,7 @@ const scrollTo = () => {
               <div className="ml-auto flex items-center pt-5">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
 
-                  <Link aria-label="About Us - Main Navigation" to={'/About'} className="text-md font-medium text-white duration-300 hover:scale-110" >
+                  <Link aria-label="About Us - Main Navigation" to={'/About'} className="text-md font-medium mb-[2px] text-white duration-300 hover:scale-110" >
                     {t('About')}
                   </Link>
                   <Link aria-label="Products - Main Navigation" to={'/products'} className="text-md font-medium text-white duration-300 hover:scale-110" >
