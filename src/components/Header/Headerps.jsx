@@ -6,7 +6,7 @@ function  Headerps ({ name, Carbg , t}) {
     const currentLanguage = i18n.language || i18n.options.fallbackLng[0];
   return (
     <>
-      <section className="h-[300px] sm:h-[400px] w-full" style={{backgroundImage: `url(${Carbg})`, backgroundSize: 'contain',}}>
+      <section className="h-[200px] sm:h-[200px] w-full" style={{backgroundImage: `url(${Carbg})`, backgroundSize: 'contain',}}>
         <div className="sm:mx-36 mx-10">
           <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="text-white pt-20">
             <h3 className="text-[36px] mb-[5px] font-bold">{name}</h3>
