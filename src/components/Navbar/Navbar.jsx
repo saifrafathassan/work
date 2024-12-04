@@ -111,7 +111,7 @@ const scrollTo = () => {
               </button>
 
               {/* Logo */}
-              <div className="ml-4 lg:ml-8">
+              <div className="lg:ml-8 w-full lg:w-auto flex justify-center md:justify-start">
                 <Link aria-label="Home page - Main Navigation" to={'/'} className='flex'>
                   <div className=" pt-5">
                     <img className="object-cover h-20" src={Logo} alt="" />
