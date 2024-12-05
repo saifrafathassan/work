@@ -15,11 +15,11 @@ const Section2 = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 800,
     slidesToShow: 3, // عرض 5 صور على الشاشات الكبيرة
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
     arrows: false,
     centerMode: true, // تفعيل عرض الصورة في المنتصف على الشاشات الكبيرة
     responsive: [
@@ -38,12 +38,12 @@ const Section2 = () => {
       <div className="w-full ">
         <Slider {...settings}>
           {[img1, img2, img3, img4, img5, img6, img7].map((img, index) => (
-            <div key={index} className="sm:px-8 pb-10"> {/* مسافة بين الصور */}
+            <div key={index} className="sm:px-14 pb-10"> {/* مسافة بين الصور */}
               <img 
                 src={img} 
                 alt={`Slide ${index + 1}`} 
                 className="w-full rounded-lg
-                           h-[300px] md:h-[200px] lg:h-[450px]
+                           h-[220px] md:h-[200px] lg:h-[300px]
                           object-fill  sm:object-cover transform transition-transform duration-500"
               />
             </div>
