@@ -15,11 +15,11 @@ const Section2 = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 800,
+    speed: 1000,
     slidesToShow: 3, // عرض 5 صور على الشاشات الكبيرة
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 1200,
     arrows: false,
     centerMode: true, // تفعيل عرض الصورة في المنتصف على الشاشات الكبيرة
     responsive: [
