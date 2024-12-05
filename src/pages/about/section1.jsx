@@ -32,7 +32,7 @@ const Section1 = ({ t }) => {
 
         {/* النص على الصورة */}
         <motion.div
-          className={`absolute w-full sm:w-auto sm:px-20 top-[10%] sm:top-1/3 ${
+          className={`absolute w-full sm:w-auto sm:px-32 top-[10%] sm:top-1/3 ${
             isArabic ? 'right-5' : 'left-5'
           } transform -translate-y-1/2 sm:translate-y-0 text-white text-${
             isArabic ? 'right' : 'left'
