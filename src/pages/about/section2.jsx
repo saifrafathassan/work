@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { withTranslation } from 'react-i18next';
 import img1 from '../../assets/1.jpg';
 import img2 from '../../assets/2.jpg';
 import img3 from '../../assets/3.jpg';
@@ -11,7 +11,7 @@ import img5 from '../../assets/4.jpg';
 import img6 from '../../assets/7.jpg';
 import img7 from '../../assets/8.jpg';
 
-const Section2 = () => {
+const Section2 = ({t}) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -40,7 +40,7 @@ const Section2 = () => {
       <div className="w-full text-center">
         {/* العنوان والسطر */}
         <div className="my-10 ">
-          <h2 className="text-3xl font-semibold text-gray-800">Our Gallery</h2>
+          <h2 className="text-3xl font-semibold text-gray-800">{t('Our Gallery')}</h2>
           <div className="w-20 h-1 bg-main mx-auto mt-2"></div> {/* السطر تحت العنوان */}
         </div>
         <Slider {...settings}>
@@ -61,4 +61,4 @@ const Section2 = () => {
   );
 };
 
-export default Section2;
+export default withTranslation()(Section2);
