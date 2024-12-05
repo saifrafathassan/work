@@ -1,5 +1,3 @@
-import background from '../../../assets/background.jpg';
-
 import Section2 from '../../../pages/about/section2';
 
 const Contact = () => {

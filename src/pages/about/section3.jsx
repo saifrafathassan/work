@@ -1,15 +1,13 @@
-import { withTranslation } from 'react-i18next';
-import i18n from 'i18next';
+import React from "react";
 
-const section3 = ({t}) => {
-    const currentLanguage = i18n.language || i18n.options.fallbackLng[0];
+const section3 = () => {
+
   return (
-    <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className=' h-[90px] py-5 gap-2 bg-main text-center flex flex-wrap justify-center items-center'>
+    <div  className=' h-[15px]  bg-main drop-shadow-lg'>
 
-    <p className='text-white'>{t('location1')}</p>
-    <p className='text-white'>{t('location2')}</p>
+
     </div>
   )
 }
 
-export default withTranslation()(section3);
+export default section3;
