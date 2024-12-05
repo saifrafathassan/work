@@ -66,7 +66,5 @@
 
 .slick-center img {
     transform: scale(1.1); /* تكبير وتحريك لأعلى */
-    padding-right: 15px;
-    padding-left: 15px;
     transition: transform 0.5s ease, z-index 0.5s ease;
 }
