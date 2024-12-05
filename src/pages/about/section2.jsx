@@ -26,7 +26,7 @@ const Section2 = () => {
     centerMode: true, // تفعيل عرض الصورة في المنتصف على الشاشات الكبيرة
     responsive: [
       {
-        breakpoint: 768, // عند عرض الشاشة أقل من 768px (الهاتف) 
+        breakpoint: 768, // عند عرض الشاشة أقل من 768px (الهاتف)
         settings: {
           slidesToShow: 1, // صورة واحدة فقط تظهر على الهاتف
           centerPadding: '0', // إزالة padding
@@ -37,16 +37,21 @@ const Section2 = () => {
 
   return (
     <div className="h-full w-full md:py-12 py-5 flex justify-center">
-      <div className="w-full ">
+      <div className="w-full text-center">
+        {/* العنوان والسطر */}
+        <div className="my-10 ">
+          <h2 className="text-3xl font-semibold text-gray-800">Our Gallery</h2>
+          <div className="w-20 h-1 bg-main mx-auto mt-2"></div> {/* السطر تحت العنوان */}
+        </div>
         <Slider {...settings}>
           {[img1, img2, img3, img4, img5, img6, img7].map((img, index) => (
-            <div key={index} className="sm:px-2 pb-10"> {/* مسافة بين الصور */}
+            <div key={index} className="px-5 sm:pt-0 pt-5 sm:pb-10"> {/* مسافة بين الصور */}
               <img 
                 src={img} 
                 alt={`Slide ${index + 1}`} 
                 className="w-full rounded-lg
                            h-[220px] md:h-[200px] lg:h-[300px]
-                          object-fill  sm:object-cover transform transition-transform duration-500"
+                          object-fill sm:object-cover transform transition-transform duration-500"
               />
             </div>
           ))}

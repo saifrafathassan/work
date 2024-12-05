@@ -59,11 +59,11 @@ function Footer({ t }) {
     </li>
     <li className="flex items-center justify-center md:justify-start gap-1 text-white py-2">
       <FaLocationDot className="mr-2 text-lg" />
-      <span>{t('location1')}</span>
+      <span className='text-sm sm:text-md'>{t('location1')}</span>
     </li>
     <li className="flex items-center justify-center md:justify-start gap-1 text-white">
       <FaLocationDot className="mr-2 text-lg" />
-      <span>{t('location2')}</span>
+      <span className='text-sm sm:text-md'>{t('location2')}</span>
     </li>
   </nav>
 </div>
