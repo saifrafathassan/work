@@ -79,9 +79,6 @@ function Footer({ t }) {
                             <h1 className=' text-2xl font-bold text-transparent bg-clip-text bg-white px-2 pb-1 rounded' >SIVIN STEEL</h1>
                         </div>
                     </Link>
-                    <p className="text-[12px] sm:text-sm flex items-center gap-1 text-gray-200 sm:ms-6 sm:mt-0 mt-4" >© 2023 SIVIN STEEL — 
-                        Created By By Saif Rafat
-                    </p>
                     <span className="inline-flex sm:ms-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                         <a  className="text-white">
                             <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-5 h-5" viewBox="0 0 24 24">
