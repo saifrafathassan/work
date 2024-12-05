@@ -21,6 +21,8 @@ const Section2 = () => {
     autoplay: true,
     autoplaySpeed: 1200,
     arrows: false,
+    pauseOnHover: false, // تعطيل التوقف عند التمرير فوق السلايدر
+    pauseOnFocus: false, // تعطيل التوقف عند التركيز على السلايدر
     centerMode: true, // تفعيل عرض الصورة في المنتصف على الشاشات الكبيرة
     responsive: [
       {
@@ -38,7 +40,7 @@ const Section2 = () => {
       <div className="w-full ">
         <Slider {...settings}>
           {[img1, img2, img3, img4, img5, img6, img7].map((img, index) => (
-            <div key={index} className="sm:px-5 pb-10"> {/* مسافة بين الصور */}
+            <div key={index} className="sm:px-2 pb-10"> {/* مسافة بين الصور */}
               <img 
                 src={img} 
                 alt={`Slide ${index + 1}`} 

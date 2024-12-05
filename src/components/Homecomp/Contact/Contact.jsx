@@ -6,8 +6,7 @@ const Contact = () => {
   return (
     <div
     
-      className="md:h-[500px] w-full pt-14"
-      style={{ backgroundImage: `url(${background})`, backgroundSize: 'contain' }}
+      className="md:h-[500px] w-full pt-14 bg-gray-100"
     >
 
     <Section2/>
