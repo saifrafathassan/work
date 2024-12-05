@@ -8,23 +8,21 @@ const Section1 = ({t}) => {
   return (
     <section 
       dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} 
-      className="bg-white h-full py-12 flex flex-col justify-center items-center"
+      className="bg-white h-full  flex flex-col justify-center items-center"
     >
-      {/* النص */}
-      <div className="w-full px-5 md:px-32 text-center">
-        <h1 className='text-xl font-semibold pb-4'>{t("abouth")}</h1>
-        <p className="text-lg text-gray-800 leading-relaxed">
-        {t("aboutp")}
-        </p>
-      </div>
 
       {/* الصورة */}
-      <div className="w-full pt-8">
+      <div className="w-full relative">
         <img 
           src={factoryimg} 
           alt="Example" 
           className="w-full h-auto object-cover"
         />
+        {/* النص على الصورة */}
+        <div className="absolute w-full px-5 sm:w-auto sm:px-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center z-20">
+          <h1 className="md:text-3xl font-semibold">{t("abouth")}</h1>
+          <p className="md:text-lg">{t("aboutp")}</p>
+        </div>
       </div>
     </section> 
   );
