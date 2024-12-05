@@ -50,7 +50,7 @@ const Section1 = ({ t }) => {
             {t('abouth')}
           </motion.h1>
           <motion.p
-            className="text-base w-[300px] sm:pt-5 sm:md:text-lg font-semibold sm:w-full" 
+            className="text-base w-[300px] sm:pt-5 sm:md:text-lg font-semibold md:w-full lg:w-[1000px]" 
             variants={textVariants}
             transition={{ duration: 1.4, delay: 0.4 }}
           >

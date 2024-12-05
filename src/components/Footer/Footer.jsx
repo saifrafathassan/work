@@ -71,7 +71,7 @@ function Footer({ t }) {
   </div>
 </div>
 
-
+{/* 
             <div className="bg-main" >
                 <div className="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
                     <Link to={'/'} className='flex'>
@@ -104,7 +104,7 @@ function Footer({ t }) {
                         </a>
                     </span>
                 </div>
-            </div>
+            </div> */}
         </footer>
     );
 }

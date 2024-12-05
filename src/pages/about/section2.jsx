@@ -38,7 +38,7 @@ const Section2 = () => {
       <div className="w-full ">
         <Slider {...settings}>
           {[img1, img2, img3, img4, img5, img6, img7].map((img, index) => (
-            <div key={index} className="sm:px-14 pb-10"> {/* مسافة بين الصور */}
+            <div key={index} className="sm:px-5 pb-10"> {/* مسافة بين الصور */}
               <img 
                 src={img} 
                 alt={`Slide ${index + 1}`} 
