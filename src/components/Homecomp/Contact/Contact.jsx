@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div
     
-      className="md:h-[500px] w-full pt-14 bg-gray-100"
+      className="md:h-full w-full pt-14 bg-gray-100"
     >
 
     <Section2/>
