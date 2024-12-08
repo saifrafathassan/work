@@ -3,6 +3,9 @@ import Slider from 'react-slick';
 import Slider1 from '../../../assets/slide1.webp';
 import Slider2 from '../../../assets/slide3.webp';
 import Slider3 from '../../../assets/slide2.webp';
+import Slider4 from '../../../assets/slide4.webp';
+import Slider5 from '../../../assets/slide5.webp';
+import Slider6 from '../../../assets/slide6.webp';
 import background from '../../../assets/background.jpg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,9 +15,12 @@ import { Link } from 'react-router-dom'; // استيراد Link من React Route
 import { useNavigate } from 'react-router-dom';
 
 const slides = [
-  { image: Slider1, text: 'النص الأولى', link: '/products/gold' }, // رابط الصورة الأولى
-  { image: Slider2, text: 'النص الثانية', link: '/products/silver' }, // رابط الصورة الثانية
-  { image: Slider3, text: 'النص الثالثة', link: '/products/diamond' }, // رابط الصورة الثالثة
+  { image: Slider1, text: 'diamond ', link: '/products/diamond' }, // رابط الصورة الأولى
+  { image: Slider2, text: 'diamond ', link: '/products/diamond' }, // رابط الصورة الثانية
+  { image: Slider3, text: 'gold', link: '/products/gold' }, // رابط الصورة الثالثة
+  { image: Slider4, text: 'gold', link: '/products/gold' }, // رابط الصورة الثالثة
+  { image: Slider5, text: 'silver', link: '/products/silver' }, // رابط الصورة الثالثة
+  { image: Slider6, text: 'silver', link: '/products/silver' }, // رابط الصورة الثالثة
 ];
 
 const HeroSection = ({ t }) => {

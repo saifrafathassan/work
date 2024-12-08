@@ -128,12 +128,12 @@ const scrollTo = () => {
                   </Link>
                   {/* قائمة المنتجات */}
                   <div className="relative group">
-                    <button
+                    <Link to={'/products'}
                       aria-label="Products - Main Navigation"
                       className="text-md font-medium text-white duration-300 hover:scale-110"
                     >
                       {t('Products')}
-                    </button>
+                    </Link>
                     <div className="absolute left-0 hidden z-10 group-hover:block bg-white shadow-lg rounded-md p-6 pt-2 mt-[2px]">
                       <Link
                         to="/products/gold"
