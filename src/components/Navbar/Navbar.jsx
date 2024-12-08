@@ -134,7 +134,7 @@ const scrollTo = () => {
                     >
                       {t('Products')}
                     </button>
-                    <div className="absolute left-0 hidden z-10 group-hover:block bg-white shadow-lg rounded-md p-6 pt-2 mt-1">
+                    <div className="absolute left-0 hidden z-10 group-hover:block bg-white shadow-lg rounded-md p-6 pt-2 mt-[2px]">
                       <Link
                         to="/products/gold"
                         className="block text-gray-700 hover:text-main px-2 py-1"
