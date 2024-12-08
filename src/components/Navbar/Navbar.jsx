@@ -11,6 +11,7 @@ import Logo from '../../assets/Asset4.png'
 const Navbar = ({ t }) => {
   const [open, setOpen] = useState(false)
   const [showButton, setShowButton] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
 
 
   // scrool to top button
@@ -125,9 +126,35 @@ const scrollTo = () => {
                   <Link aria-label="About Us - Main Navigation" to={'/About'} className="text-md font-medium mb-[2px] text-white duration-300 hover:scale-110" >
                     {t('About')}
                   </Link>
-                  <Link aria-label="Products - Main Navigation" to={'/products'} className="text-md font-medium text-white duration-300 hover:scale-110" >
-                    {t('Products')}
-                  </Link>
+                  {/* قائمة المنتجات */}
+                  <div className="relative group">
+                    <button
+                      aria-label="Products - Main Navigation"
+                      className="text-md font-medium text-white duration-300 hover:scale-110"
+                    >
+                      {t('Products')}
+                    </button>
+                    <div className="absolute left-0 hidden z-10 group-hover:block bg-white shadow-lg rounded-md p-6 pt-2 mt-1">
+                      <Link
+                        to="/products/gold"
+                        className="block text-gray-700 hover:text-main px-2 py-1"
+                      >
+                        Gold
+                      </Link>
+                      <Link
+                        to="/products/diamond"
+                        className="block text-gray-700 hover:text-main px-2 py-1"
+                      >
+                        Diamond
+                      </Link>
+                      <Link
+                        to="/products/silver"
+                        className="block text-gray-700 hover:text-main px-2 py-1"
+                      >
+                        Silver
+                      </Link>
+                    </div>
+                  </div>
                   <Link aria-label="Contact us - Main Navigation" to={'/contact'} className="text-md font-medium text-white duration-300 hover:scale-110" >
                     {t('Contact')}
                   </Link>

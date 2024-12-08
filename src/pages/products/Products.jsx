@@ -5,6 +5,9 @@ import Bg from '../../assets/background.jpg'
 import { useTranslation } from 'react-i18next';
 import PSection from './PSection';
 import Productdet from './Productdet';
+import Gold from './Gold';
+import Silver from './Silver';
+import Diamond from './Diamond';
 
 const Products = () => {
     const { t } = useTranslation();
@@ -12,8 +15,9 @@ const Products = () => {
     <>
       <Navbar/>
       <Headerps name={t('Products')} Carbg={Bg}/> 
-      <PSection/>
-      <Productdet/>
+      <Gold/>
+      <Silver/>
+      <Diamond/>
       <Footer/>
     </>
   )
