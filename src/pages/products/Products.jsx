@@ -69,7 +69,7 @@ const Products = () => {
             />
                   <div className="w-[350px] h-1 bg-main mx-auto my-4"></div> {/* السطر تحت العنوان */}
             {/* تفاصيل المنتج */}
-            <h3 className="text-3xl font-semibold text-center mb-4 hover:text-main">
+            <h3 className="text-3xl text-main font-semibold text-center mb-4 hover:text-blue-500 duration-200">
               {product.title}
             </h3>
             <p className="text-gray-600 text-center mb-6 text-lg mx-10">
@@ -77,7 +77,7 @@ const Products = () => {
             </p>
 
             {/* زرار التفاصيل */}
-            <button className="bg-main text-white py-3 px-24 rounded-lg hover:bg-opacity-90 transition text-lg">
+            <button className="bg-main text-white py-3 px-24 rounded-lg hover:bg-blue-500 transition text-lg">
               {t('Details')}
             </button>
           </div>
