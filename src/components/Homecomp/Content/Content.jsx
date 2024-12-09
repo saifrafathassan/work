@@ -13,8 +13,8 @@ const Content = ({ t }) => {
         dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'}
         className="w-full md:w-2/3 lg:w-1/2 text-center mb-6"
       >
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">{t('h1')}</h1>
-        <p className="text-xl text-gray-600">{t('content')}</p>
+        <h1 className="text-4xl font-bold text-main mb-4">{t('h1')}</h1>
+        <p className="text-xl sm:text-2xl text-gray-800">{t('content')}</p>
       </div>
 
       {/* الفيديو */}
@@ -34,7 +34,7 @@ const Content = ({ t }) => {
         dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'}
         className="w-full md:w-2/3 lg:w-1/2 text-center mt-6"
       >
-        <p className="text-xl text-gray-600">{t('content2')}</p>
+        <p className="text-xl sm:text-2xl text-gray-800">{t('content2')}</p>
       </div>
     </div>
   );

@@ -40,7 +40,7 @@ const Section2 = ({t}) => {
       <div className="w-full text-center">
         {/* العنوان والسطر */}
         <div className="my-10 ">
-          <h2 className="text-3xl font-semibold text-gray-800">{t('Our Gallery')}</h2>
+          <h2 className="text-4xl font-semibold text-main">{t('Our Gallery')}</h2>
           <div className="w-20 h-1 bg-main mx-auto mt-2"></div> {/* السطر تحت العنوان */}
         </div>
         <Slider {...settings}>
