@@ -11,16 +11,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import { withTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom'; // استيراد Link من React Router
 import { useNavigate } from 'react-router-dom';
 
 const slides = [
-  { image: Slider1, text: 'diamond ', link: '/products/diamond' }, // رابط الصورة الأولى
-  { image: Slider2, text: 'diamond ', link: '/products/diamond' }, // رابط الصورة الثانية
-  { image: Slider3, text: 'gold', link: '/products/gold' }, // رابط الصورة الثالثة
-  { image: Slider4, text: 'gold', link: '/products/gold' }, // رابط الصورة الثالثة
-  { image: Slider5, text: 'silver', link: '/products/silver' }, // رابط الصورة الثالثة
-  { image: Slider6, text: 'silver', link: '/products/silver' }, // رابط الصورة الثالثة
+  { image: Slider1, text: 'Diamond ', link: '/products/diamond' }, // رابط الصورة الأولى
+  { image: Slider2, text: 'Diamond ', link: '/products/diamond' }, // رابط الصورة الثانية
+  { image: Slider3, text: 'Gold', link: '/products/gold' }, // رابط الصورة الثالثة
+  { image: Slider4, text: 'Gold', link: '/products/gold' }, // رابط الصورة الثالثة
+  { image: Slider5, text: 'Silver', link: '/products/silver' }, // رابط الصورة الثالثة
+  { image: Slider6, text: 'Silver', link: '/products/silver' }, // رابط الصورة الثالثة
 ];
 
 const HeroSection = ({ t }) => {

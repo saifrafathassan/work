@@ -10,6 +10,9 @@ export default {
         'main' : '#005A94'
         
       },
+      boxShadow: {
+        '3xl': "20px 20px 20px rgba(0, 0, 0, 0.1), -20px -20px 20px rgba(0, 0, 0, 0.1), 20px -20px 20px rgba(0, 0, 0, 0.1), -20px 20px 20px rgba(0, 0, 0, 0.1)",
+      },
     }, 
   },
   plugins: [],
