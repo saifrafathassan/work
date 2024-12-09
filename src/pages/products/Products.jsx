@@ -21,22 +21,22 @@ const Products = () => {
     {
       category: 'Gold',
       items: [
-        { image: Slider1, title: '50x60 المقاس', description: t("info") },
-        { image: Slider2, title: '50x60 المقاس', description: t("info") },
+        { image: Slider1, title: '50x60x120', description: t("info") },
+        { image: Slider2, title: '50x60x120', description: t("info") },
       ],
     },
     {
       category: 'Silver',
       items: [
-        { image: Slider3, title: '50x60 المقاس', description: t("info") },
-        { image: Slider4, title: '50x60 المقاس', description: t("info") },
+        { image: Slider3, title: '50x60x120', description: t("info") },
+        { image: Slider4, title: '50x60x120', description: t("info") },
       ],
     },
     {
       category: 'Diamond',
       items: [
-        { image: Slider5, title: '50x60 المقاس', description: t("info") },
-        { image: Slider6, title: '50x60 المقاس', description: t("info") },
+        { image: Slider5, title: '50x60x120', description: t("info") },
+        { image: Slider6, title: '50x60x120', description: t("info") },
       ],
     },
   ];
@@ -69,7 +69,7 @@ const Products = () => {
             />
                   <div className="w-[350px] h-1 bg-main mx-auto my-4"></div> {/* السطر تحت العنوان */}
             {/* تفاصيل المنتج */}
-            <h3 className="text-2xl font-semibold text-center mb-4">
+            <h3 className="text-2xl font-semibold text-center mb-4 hover:text-main">
               {product.title}
             </h3>
             <p className="text-gray-600 text-center mb-6 text-lg mx-10">
