@@ -49,7 +49,7 @@ const Products = () => {
       {/* عنوان القسم */}
       <h2 className="text-3xl sm:text-5xl text-main text-center font-bold mb-24">
         {t(category.category)}
-      <div className="w-[150px] h-1 bg-main mx-auto mt-2"></div> {/* السطر تحت العنوان */}
+      <div className="w-[150px] h-1 bg-main mx-auto mt-4"></div> {/* السطر تحت العنوان */}
       </h2>
 
       {/* المنتجات */}

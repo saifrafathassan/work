@@ -14,12 +14,12 @@ import { withTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 const slides = [
-  { image: Slider1, text: 'Diamond ', link: '/products/diamond' }, // رابط الصورة الأولى
-  { image: Slider2, text: 'Diamond ', link: '/products/diamond' }, // رابط الصورة الثانية
-  { image: Slider3, text: 'Gold', link: '/products/gold' }, // رابط الصورة الثالثة
-  { image: Slider4, text: 'Gold', link: '/products/gold' }, // رابط الصورة الثالثة
-  { image: Slider5, text: 'Silver', link: '/products/silver' }, // رابط الصورة الثالثة
-  { image: Slider6, text: 'Silver', link: '/products/silver' }, // رابط الصورة الثالثة
+  { image: Slider1, text: 'Diamond ', link: '/products/diamond', size: "50x60" }, 
+  { image: Slider2, text: 'Diamond ', link: '/products/diamond',size: "150x60" }, 
+  { image: Slider3, text: 'Gold', link: '/products/gold',size: "40x60" }, 
+  { image: Slider4, text: 'Gold', link: '/products/gold',size: "30x60" }, 
+  { image: Slider5, text: 'Silver', link: '/products/silver',size: "10x60" }, 
+  { image: Slider6, text: 'Silver', link: '/products/silver',size: "100x60" },
 ];
 
 const HeroSection = ({ t }) => {
@@ -69,22 +69,28 @@ const HeroSection = ({ t }) => {
         backgroundSize: 'contain',
       }}
     >
-      <Slider ref={sliderRef} {...settings}>
-        {slides.map((slide, index) => (
-          <div key={index} className="relative pt-20 md:pt-36">
-            <div className="absolute top-0 left-3 w-full text-center pt-14">
-              <h2 className="text-white text-2xl sm:text-4xl font-bold">{slide.text}</h2>
-            </div>
-            {/* استخدم onClick للتوجيه */}
-            <img
-              className="w-[70%] h-[300px] sm:w-[70%] sm:h-[500px] object-contain mx-auto cursor-pointer"
-              src={slide.image}
-              alt={`heroimg${index}`}
-              onClick={() => navigate(slide.link)}
-            />
-          </div>
-        ))}
-      </Slider>
+<Slider ref={sliderRef} {...settings}>
+  {slides.map((slide, index) => (
+    <div key={index} className="relative pt-20 md:pt-36">
+      <div className="absolute top-0 left-3 w-full text-center pt-14">
+        <h2 className="text-white text-2xl sm:text-4xl font-bold">{slide.text}</h2>
+      </div>
+      {/* الصورة الكبيرة */}
+      <img
+        className="w-[70%] h-[300px] sm:w-[70%] sm:h-[500px] object-contain mx-auto cursor-pointer"
+        src={slide.image}
+        alt={`heroimg${index}`}
+        onClick={() => navigate(slide.link)}
+      />
+      {/* الصورة الصغيرة أسفل الصورة الكبيرة */}
+      <div className="absolute bottom-8 left-[50%] transform -translate-x-1/2 w-[100px] h-[40px] bg-black text-white text-center flex items-center justify-center rounded-md shadow-lg">
+        {/* محتوى المربع */}
+        <span className="text-sm font-semibold">{slide.size}</span>
+      </div>
+    </div>
+  ))}
+</Slider>
+
 
       <div className="arrow-container">
         <div
