@@ -16,11 +16,11 @@ const Silver = () => {
             <Headerps name={t('Silver')} Carbg={Back} />
 
             {/* قسم المنتجات */}
-            <div className="container mx-auto px-4 py-10">
+            <div className="container mx-auto px-4 py-24">
                 <div className="grid grid-cols-1 gap-10">
                     {/* المنتج الأول */}
-                    <div className="flex flex-col md:flex-row items-center gap-6">
-                        <div className="md:w-1/2">
+                    <div className="flex flex-col md:flex-row items-center gap-6 pb-20">
+                        <div className="md:w-1/2 shadow-3xl">
                             <img 
                                 src={ProductImage1} 
                                 alt="Product 1" 
@@ -37,7 +37,7 @@ const Silver = () => {
 
                     {/* المنتج الثاني */}
                     <div className="flex flex-col md:flex-row items-center gap-6">
-                        <div className="md:w-1/2">
+                        <div className="md:w-1/2 shadow-3xl">
                             <img 
                                 src={ProductImage2} 
                                 alt="Product 2" 
