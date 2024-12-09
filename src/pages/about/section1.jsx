@@ -43,14 +43,14 @@ const Section1 = ({ t }) => {
           transition={{ duration: 1, ease: 'easeOut' }}
         >
           <motion.h1
-            className="text-1xl sm:md:text-3xl font-semibold"
+            className="text-1xl sm:md:text-5xl font-semibold"
             variants={textVariants}
             transition={{ duration: 1.2, delay: 0.2 }}
           >
             {t('abouth')}
           </motion.h1>
           <motion.p
-            className="text-base w-[300px] sm:pt-5 sm:md:text-lg font-semibold md:w-full lg:w-[1000px]" 
+            className="text-base w-[300px] sm:pt-5 sm:md:text-2xl font-semibold md:w-full lg:w-[1000px]" 
             variants={textVariants}
             transition={{ duration: 1.4, delay: 0.4 }}
           >
