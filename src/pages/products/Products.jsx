@@ -9,7 +9,6 @@ import Slider3 from '../../assets/slide3.webp';
 import Slider4 from '../../assets/slide4.webp';
 import Slider5 from '../../assets/slide5.webp';
 import Slider6 from '../../assets/slide6.webp';
-import stage from '../../assets/slide6.webp';
 import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
 
@@ -68,7 +67,7 @@ const Products = () => {
               alt={product.title}
               className="w-full h-full object-contain" // تكبير الصورة
             />
-                  <div className="w-[350px] h-1 bg-main mx-auto my-4"></div> {/* السطر تحت العنوان */}
+                  <div className="w-[100px] sm:w-[350px] h-1 bg-main mx-auto my-4"></div> {/* السطر تحت العنوان */}
             {/* تفاصيل المنتج */}
             <h3 className="text-3xl text-main font-semibold text-center mb-4 hover:text-blue-500 duration-200">
               {product.title}

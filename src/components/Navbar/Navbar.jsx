@@ -134,24 +134,24 @@ const scrollTo = () => {
                     >
                       {t('Products')}
                     </Link>
-                    <div className="absolute left-0 hidden z-10 group-hover:block bg-white shadow-lg rounded-md p-6 pt-5">
+                    <div className="absolute left-0 hidden z-10 group-hover:block bg-white shadow-lg rounded-md px-2 py-2">
                       <Link
                         to="/products/gold"
                         className="block text-gray-700 hover:text-main px-2 py-1"
                       >
-                        Gold
+                        {t('Gold')}
                       </Link>
                       <Link
                         to="/products/diamond"
                         className="block text-gray-700 hover:text-main px-2 py-1"
                       >
-                        Diamond
+                        {t('Diamond')}
                       </Link>
                       <Link
                         to="/products/silver"
                         className="block text-gray-700 hover:text-main px-2 py-1"
                       >
-                        Silver
+                        {t('Silver')}
                       </Link>
                     </div>
                   </div>

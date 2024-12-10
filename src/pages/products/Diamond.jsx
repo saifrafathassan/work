@@ -6,9 +6,12 @@ import Back from '../../assets/background.jpg';
 import ProductImage1 from '../../assets/slide1.webp'; 
 import ProductImage2 from '../../assets/slide2.webp'; 
 import { useTranslation } from 'react-i18next';
+import i18n from 'i18next';
+
 
 const Diamond = () => {
     const { t } = useTranslation();
+    const currentLanguage = i18n.language || i18n.options.fallbackLng[0];
 
     return (
         <>
@@ -16,7 +19,7 @@ const Diamond = () => {
             <Headerps name={t('Diamond')} Carbg={Back} />
 
             {/* قسم المنتجات */}
-            <div className="container mx-auto px-4 py-24">
+            <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="container mx-auto px-4 py-24">
                 <div className="grid grid-cols-1 gap-10">
                     {/* المنتج الأول */}
                     <div className="flex flex-col md:flex-row gap-6 pb-20">
