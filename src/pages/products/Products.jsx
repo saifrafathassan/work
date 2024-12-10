@@ -22,22 +22,22 @@ const Products = () => {
     {
       category: 'Gold',
       items: [
-        { image: Slider1, title: '50x60x120', description: t("info") },
-        { image: Slider2, title: '50x60x120', description: t("info") },
+        { image: Slider1, title: '72x45x23', description: t("info") },
+        { image: Slider2, title: '80x50x24', description: t("info") },
       ],
     },
     {
       category: 'Silver',
       items: [
-        { image: Slider3, title: '50x60x120', description: t("info") },
-        { image: Slider4, title: '50x60x120', description: t("info") },
+        { image: Slider3, title: '44x39x21', description: t("info") },
+        { image: Slider4, title: '88x50x23', description: t("info") },
       ],
     },
     {
       category: 'Diamond',
       items: [
-        { image: Slider5, title: '50x60x120', description: t("info") },
-        { image: Slider6, title: '50x60x120', description: t("info") },
+        { image: Slider5, title: '75x48x23', description: t("info") },
+        { image: Slider6, title: '120x50x21', description: t("info") },
       ],
     },
   ];

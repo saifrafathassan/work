@@ -35,10 +35,10 @@ const Gold = () => {
                                 className="absolute sm:ms-1 bottom-0 left-0 w-full rounded-lg object-cover"
                             />
                         </div>
-                        <div className="md:w-1/2 text-start pt-12 sm:ps-12">
-                            <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200">{t('Product 1')}</h2>
-                            <p className="text-gray-700">
-                                {t('This is a brief description of the first product.')}
+                        <div className="md:w-1/2 text-start pt-12 sm:px-12">
+                            <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200">72x45x23</h2>
+                            <p className="text-gray-700 text-2xl">
+                                {t('info')}
                             </p>
                         </div>
                     </div>
@@ -52,10 +52,10 @@ const Gold = () => {
                                 className="w-full rounded-lg shadow-lg" 
                             />
                         </div>
-                        <div className="md:w-1/2 text-start pt-12 sm:ps-12">
-                            <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200">{t('Product 2')}</h2>
-                            <p className="text-gray-700">
-                                {t('This is a brief description of the second product.')}
+                        <div className="md:w-1/2 text-start pt-12 sm:px-12">
+                            <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200">72x45x23</h2>
+                            <p className="text-gray-700 text-2xl">
+                            {t('info')}
                             </p>
                         </div>
                     </div>
