@@ -14,12 +14,12 @@ import { withTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 const slides = [
-  { image: Slider1, text: 'Diamond ', link: '/products/diamond', size: "50x60" }, 
-  { image: Slider2, text: 'Diamond ', link: '/products/diamond',size: "150x60" }, 
-  { image: Slider3, text: 'Gold', link: '/products/gold',size: "40x60" }, 
-  { image: Slider4, text: 'Gold', link: '/products/gold',size: "30x60" }, 
-  { image: Slider5, text: 'Silver', link: '/products/silver',size: "10x60" }, 
-  { image: Slider6, text: 'Silver', link: '/products/silver',size: "100x60" },
+  { image: Slider1, text: 'Diamond ', link: '/products/diamond', size: "72x45x23" }, 
+  { image: Slider2, text: 'Diamond ', link: '/products/diamond',size: "44x39x21" }, 
+  { image: Slider3, text: 'Gold', link: '/products/gold',size: "80x50x24" }, 
+  { image: Slider4, text: 'Gold', link: '/products/gold',size: "88x50x23" }, 
+  { image: Slider5, text: 'Silver', link: '/products/silver',size: "75x48x23" }, 
+  { image: Slider6, text: 'Silver', link: '/products/silver',size: "120x50x21" },
 ];
 
 const HeroSection = ({ t }) => {
