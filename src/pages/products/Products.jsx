@@ -9,6 +9,7 @@ import Slider3 from '../../assets/slide3.webp';
 import Slider4 from '../../assets/slide4.webp';
 import Slider5 from '../../assets/slide5.webp';
 import Slider6 from '../../assets/slide6.webp';
+import stage from '../../assets/slide6.webp';
 import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
 
