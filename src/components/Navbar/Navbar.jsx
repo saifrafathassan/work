@@ -12,6 +12,7 @@ const Navbar = ({ t }) => {
   const [open, setOpen] = useState(false)
   const [showButton, setShowButton] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
 
 
   // scrool to top button
@@ -78,9 +79,43 @@ const scrollTo = () => {
                   <Link to={'/contact'} className="text-md font-medium ps-2 text-gray-700 duration-300 hover:text-main hover:scale-110" >
                   {t('Contact')}
                   </Link>
-                  <Link to={'/products'} className="text-md font-medium ps-2 text-gray-700 duration-300 hover:text-main hover:scale-110" >
-                  {t('Products')}
-                  </Link>
+                  <div className="flow-root cursor-pointer w-full">
+  <div
+    className="text-md font-medium ps-2 text-gray-700 duration-300 hover:text-main hover:scale-110 flex justify-between items-center"
+    onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
+  >
+    {t('Products')}
+    <IoIosArrowUp
+      className={`transform duration-300 ${
+        isMobileDropdownOpen ? 'rotate-180' : 'rotate-0'
+      }`}
+      size={20}
+    />
+  </div>
+  {isMobileDropdownOpen && (
+    <div className="mt-2 ml-4 space-y-2">
+      <Link to="/products" className="block text-gray-700 hover:text-main">
+        {t('All Products')}
+      </Link>
+      <Link to="/products/platinum" className="block text-gray-700 hover:text-main">
+        {t('Platinum')}
+      </Link>
+      <Link to="/products/emerald" className="block text-gray-700 hover:text-main">
+        {t('Emerald')}
+      </Link>
+      <Link to="/products/classic" className="block text-gray-700 hover:text-main">
+        {t('Classic')}
+      </Link>
+      <Link to="/products/diamond" className="block text-gray-700 hover:text-main">
+        {t('Diamond')}
+      </Link>
+      <Link to="/products/silver" className="block text-gray-700 hover:text-main">
+        {t('Silver')}
+      </Link>
+    </div>
+  )}
+</div>
+
 
                   <div className="flow-root cursor-pointer w-[110px]">
                     <LanguageSwitcher />
@@ -136,10 +171,22 @@ const scrollTo = () => {
                     </Link>
                     <div className="absolute left-0 hidden z-10 group-hover:block bg-white shadow-lg rounded-md px-2 py-2">
                       <Link
-                        to="/products/gold"
+                        to="/products/platinum"
                         className="block text-gray-700 hover:text-main px-2 py-1"
                       >
-                        {t('Gold')}
+                        {t('Platinum')} 
+                      </Link>
+                      <Link
+                        to="/products/emerald"
+                        className="block text-gray-700 hover:text-main px-2 py-1"
+                      >
+                        {t('Emerald')}
+                      </Link>
+                      <Link
+                        to="/products/classic"
+                        className="block text-gray-700 hover:text-main px-2 py-1"
+                      >
+                        {t('Classic')}
                       </Link>
                       <Link
                         to="/products/diamond"

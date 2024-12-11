@@ -9,14 +9,14 @@ import stage from '../../assets/stage.png'; // الصورة التي ستوضع 
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 
-const Gold = () => {
+const Platinum = () => {
     const { t } = useTranslation();
     const currentLanguage = i18n.language || i18n.options.fallbackLng[0];
 
     return (
         <>
             <Navbar />
-            <Headerps name={t('Gold')} Carbg={Back} />
+            <Headerps name={t('Platinum')} Carbg={Back} />
 
             {/* قسم المنتجات */}
             <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="container mx-auto px-4 py-24">
@@ -69,4 +69,4 @@ const Gold = () => {
     );
 };
 
-export default Gold;
+export default Platinum;

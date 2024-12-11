@@ -3,34 +3,42 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
-import ProductImage1 from '../../assets/slide3.webp'; 
-import ProductImage2 from '../../assets/slide2.webp'; 
+import ProductImage1 from '../../assets/slide5.webp'; 
+import ProductImage2 from '../../assets/slide2.webp';
+import stage from '../../assets/stage.png'; // الصورة التي ستوضع تحت المنتج الأول
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 
-const Silver = () => {
+const Emerald = () => {
     const { t } = useTranslation();
     const currentLanguage = i18n.language || i18n.options.fallbackLng[0];
 
     return (
         <>
             <Navbar />
-            <Headerps name={t('Silver')} Carbg={Back} />
+            <Headerps name={t('Emerald')} Carbg={Back} />
 
             {/* قسم المنتجات */}
             <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="container mx-auto px-4 py-24">
                 <div className="grid grid-cols-1 gap-10">
                     {/* المنتج الأول */}
                     <div className="flex flex-col md:flex-row gap-6 pb-20">
-                        <div className="md:w-1/2 shadow-3xl">
+                        <div className="md:w-1/2 shadow-3xl relative">
                             <img 
                                 src={ProductImage1} 
                                 alt="Product 1" 
-                                className="w-full rounded-lg shadow-lg" 
+                                className="w-[90%] hover:scale-110 mx-auto object-contain duration-200 rounded-lg z-50 relative sm:h-[550px]" 
+                            />
+
+                            {/* وضع صورة "stage" تحت الصورة الأولى مع التأكد من التصاقها */}
+                            <img 
+                                src={stage} 
+                                alt="Stage" 
+                                className="absolute sm:ms-1 bottom-0 left-0 w-full rounded-lg object-cover"
                             />
                         </div>
                         <div className="md:w-1/2 text-start pt-12 sm:px-12">
-                            <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200">44x39x21</h2>
+                            <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200">75x48x23</h2>
                             <p className="text-gray-700 text-2xl">
                                 {t('info')}
                             </p>
@@ -49,7 +57,7 @@ const Silver = () => {
                         <div className="md:w-1/2 text-start pt-12 sm:px-12">
                             <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200">72x45x23</h2>
                             <p className="text-gray-700 text-2xl">
-                                {t('info')}
+                            {t('info')}
                             </p>
                         </div>
                     </div>
@@ -61,4 +69,6 @@ const Silver = () => {
     );
 };
 
-export default Silver;
+export default Emerald;
+
+

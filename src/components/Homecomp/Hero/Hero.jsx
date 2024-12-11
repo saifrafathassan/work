@@ -13,16 +13,16 @@ import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import { withTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
-const slides = [
-  { image: Slider1, text: 'Diamond ', link: '/products/diamond', size: "72x45x23" }, 
-  { image: Slider2, text: 'Diamond ', link: '/products/diamond',size: "44x39x21" }, 
-  { image: Slider3, text: 'Gold', link: '/products/gold',size: "80x50x24" }, 
-  { image: Slider4, text: 'Gold', link: '/products/gold',size: "88x50x23" }, 
-  { image: Slider5, text: 'Silver', link: '/products/silver',size: "75x48x23" }, 
-  { image: Slider6, text: 'Silver', link: '/products/silver',size: "120x50x21" },
-];
 
 const HeroSection = ({ t }) => {
+  const slides = [
+    { image: Slider1, text: t("Diamond"), link: '/products/diamond', size: "72x45x23CM" }, 
+    { image: Slider2, text: t("Silver"), link: '/products/Silver',size: "44x39x21CM" }, 
+    { image: Slider3, text: t("Classic"), link: '/products/classic',size: "80x50x24CM" }, 
+    { image: Slider4, text: t("Classic"), link: '/products/classic',size: "88x50x23CM" }, 
+    { image: Slider5, text: t("Emerald"), link: '/products/emerald',size: "75x48x23CM" }, 
+    { image: Slider6, text: t("Classic"), link: '/products/classic',size: "120x50x21CM" },
+  ];
   const navigate = useNavigate();
   const sliderRef = useRef();
   const [isHovered, setIsHovered] = useState(false);
@@ -83,9 +83,9 @@ const HeroSection = ({ t }) => {
         onClick={() => navigate(slide.link)}
       />
       {/* الصورة الصغيرة أسفل الصورة الكبيرة */}
-      <div className="absolute bottom-8 left-[50%] transform -translate-x-1/2 w-[100px] h-[40px] bg-black text-white text-center flex items-center justify-center rounded-md shadow-lg">
+      <div className="absolute top-[100px] left-[51%] transform -translate-x-1/2 w-[100px] h-[40px] text-white text-center flex items-center justify-center rounded-md shadow-lg z-50">
         {/* محتوى المربع */}
-        <span className="text-sm font-semibold">{slide.size}</span>
+        <span className="text-4xl font-semibold">{slide.size}</span>
       </div>
     </div>
   ))}

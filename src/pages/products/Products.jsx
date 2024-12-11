@@ -19,7 +19,7 @@ const Products = () => {
 
   const products = [
     {
-      category: 'Gold',
+      category: 'Diamond',
       items: [
         { image: Slider1, title: '72x45x23', description: t("info") },
         { image: Slider2, title: '80x50x24', description: t("info") },
@@ -33,7 +33,7 @@ const Products = () => {
       ],
     },
     {
-      category: 'Diamond',
+      category: 'Emerald',
       items: [
         { image: Slider5, title: '75x48x23', description: t("info") },
         { image: Slider6, title: '120x50x21', description: t("info") },
