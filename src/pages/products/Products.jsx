@@ -9,6 +9,9 @@ import Slider3 from '../../assets/slide3.webp';
 import Slider4 from '../../assets/slide4.webp';
 import Slider5 from '../../assets/slide5.webp';
 import Slider6 from '../../assets/slide6.webp';
+import Slider7 from '../../assets/slide7.webp';
+import Slider8 from '../../assets/slide8.webp';
+import Slider9 from '../../assets/slide9.webp';
 import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
 
@@ -21,22 +24,36 @@ const Products = () => {
     {
       category: 'Diamond',
       items: [
-        { image: Slider1, title: '72x45x23', description: t("info") },
-        { image: Slider2, title: '80x50x24', description: t("info") },
+        { image: Slider1, title: '72x45x23cm', description: t("info") },
+        { image: Slider4, title: '88x50x23cm', description: t("info") },
       ],
     },
     {
       category: 'Silver',
       items: [
-        { image: Slider3, title: '44x39x21', description: t("info") },
-        { image: Slider4, title: '88x50x23', description: t("info") },
+        { image: Slider3, title: '44x39x21cm', description: t("info") },
+        { image: Slider3, title: '50x43x21cm', description: t("info") },
+      ],
+    },
+    {
+      category: 'Classic',
+      items: [
+        { image: Slider7, title: '100x50x21cm', description: t("info") },
+        { image: Slider6, title: '120x50x21cm', description: t("info") },
       ],
     },
     {
       category: 'Emerald',
       items: [
-        { image: Slider5, title: '75x48x23', description: t("info") },
-        { image: Slider6, title: '120x50x21', description: t("info") },
+        { image: Slider5, title: '75x48x23cm', description: t("info") },
+        { image: Slider2, title: '80x50x24cm', description: t("info") },
+      ],
+    },
+    {
+      category: 'Platinum',
+      items: [
+        { image: Slider9, title: '57x43x21cm', description: t("info") },
+        { image: Slider8, title: '72x45x23cm', description: t("info") },
       ],
     },
   ];
@@ -55,17 +72,17 @@ const Products = () => {
       </h2>
 
       {/* المنتجات */}
-      <div className="grid grid-cols-1 md:grid-cols-2 mx-auto w-[80%] gap-32"> {/* زيادة المسافة بين الكروت */}
+      <div className="grid grid-cols-1 md:grid-cols-2 mx-auto w-[90%] gap-32"> {/* زيادة المسافة بين الكروت */}
         {category.items.map((product, idx) => (
           <div
             key={idx}
-            className="flex  flex-col items-center  rounded-lg shadow-3xl pb-8"
+            className="flex  flex-col items-center  rounded-lg shadow-3xl py-8"
           >
             {/* صورة المنتج */}
             <img
               src={product.image}
               alt={product.title}
-              className="w-full h-full object-contain" // تكبير الصورة
+              className="w-[80%] h-full object-contain" // تكبير الصورة
             />
                   <div className="w-[100px] sm:w-[350px] h-1 bg-main mx-auto my-4"></div> {/* السطر تحت العنوان */}
             {/* تفاصيل المنتج */}
