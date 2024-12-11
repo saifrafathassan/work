@@ -26,7 +26,7 @@ const HeroSection = ({ t }) => {
     { image: Slider5, text: t("Emerald"), link: '/products/emerald',size: "75x48x23CM" }, 
     { image: Slider6, text: t("Classic"), link: '/products/classic',size: "120x50x21CM" },
     { image: Slider7, text: t("Classic"), link: '/products/classic',size: "100x50x21CM" },
-    { image: Slider8, text: t("Diamond"), link: '/products/diamond',size: "72x45x23CM" },
+    { image: Slider8, text: t("Platinum"), link: '/products/platinum',size: "72x45x23CM" },
     { image: Slider9, text: t("Platinum"), link: '/products/platinum',size: "57x43x21CM" },
   ];
   const navigate = useNavigate();

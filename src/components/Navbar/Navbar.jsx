@@ -73,6 +73,9 @@ const scrollTo = () => {
                 </div>
                 <div className="space-y-6 border-t border-gray-200 px-8 py-6 flex flex-col">
                   
+                <Link to={'/'} className="text-md font-medium ps-2 text-gray-700 duration-300 hover:text-main hover:scale-110" >
+                {t('Home')}
+                  </Link>
                 <Link to={'/About'} className="text-md font-medium ps-2 text-gray-700 duration-300 hover:text-main hover:scale-110" >
                 {t('About')}
                   </Link>
@@ -158,6 +161,9 @@ const scrollTo = () => {
               <div className="ml-auto flex items-center pt-5">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
 
+                  <Link aria-label="Home - Main Navigation" to={'/'} className="text-md font-medium mb-[2px] text-white duration-300 hover:scale-110" >
+                    {t('Home')}
+                  </Link>
                   <Link aria-label="About Us - Main Navigation" to={'/About'} className="text-md font-medium mb-[2px] text-white duration-300 hover:scale-110" >
                     {t('About')}
                   </Link>
