@@ -77,7 +77,7 @@ const HeroSection = ({ t }) => {
     >
 <Slider ref={sliderRef} {...settings}>
   {slides.map((slide, index) => (
-    <div key={index} className="relative pt-20 md:pt-36">
+    <div key={index} className="relative pt-20 md:pt-[155px]">
       <div className="absolute top-0 left-3 w-full text-center pt-14">
         <h2 className="text-white text-2xl sm:text-5xl font-bold">{slide.text}</h2>
       </div>
