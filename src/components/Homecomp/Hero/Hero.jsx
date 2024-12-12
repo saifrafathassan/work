@@ -79,7 +79,7 @@ const HeroSection = ({ t }) => {
   {slides.map((slide, index) => (
     <div key={index} className="relative pt-20 md:pt-36">
       <div className="absolute top-0 left-3 w-full text-center pt-14">
-        <h2 className="text-white text-2xl sm:text-4xl font-bold">{slide.text}</h2>
+        <h2 className="text-white text-2xl sm:text-5xl font-bold">{slide.text}</h2>
       </div>
       {/* الصورة الكبيرة */}
       <img
@@ -89,9 +89,9 @@ const HeroSection = ({ t }) => {
         onClick={() => navigate(slide.link)}
       />
       {/* الصورة الصغيرة أسفل الصورة الكبيرة */}
-      <div className="absolute top-[100px] left-[51%] transform -translate-x-1/2 w-[100px] h-[40px] text-white text-center flex items-center justify-center rounded-md z-50">
+      <div className="absolute top-[100px] mt-2 left-[51%] transform -translate-x-1/2 w-[100px] h-[40px] text-white text-center flex items-center justify-center rounded-md z-50">
         {/* محتوى المربع */}
-        <span className="text-4xl font-semibold">{slide.size}</span>
+        <span className="text-5xl font-semibold">{slide.size}</span>
       </div>
     </div>
   ))}
