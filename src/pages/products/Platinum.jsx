@@ -41,7 +41,7 @@ const Platinum = () => {
                         </div>
 
                         {/* الصور المصغرة */}
-                        <div className="absolute bottom-[-80px] w-full flex justify-start gap-1">
+                        <div className="absolute bottom-[-80px] w-full flex justify-center sm:justify-start gap-1">
                             {[ProductImage1, Thumbnail2, Thumbnail3].map((thumb, index) => (
                                 <img 
                                     key={index} 
@@ -60,7 +60,7 @@ const Platinum = () => {
 
 
 
-                        <div className="md:w-1/2 text-start pt-20 sm:px-12">
+                        <div className="md:w-1/2  text-center sm:text-start pt-20 sm:px-12">
                             <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200">72x45x23cm</h2>
                             <p className="text-gray-700 text-2xl">
                                 {t('info')}
@@ -81,7 +81,7 @@ const Platinum = () => {
                         </div>
 
                         {/* الصور المصغرة */}
-                        <div className="absolute bottom-[-80px] w-full flex justify-start gap-1">
+                        <div className="absolute bottom-[-80px] w-full flex justify-center sm:justify-start gap-1">
                             {[ProductImage2, Thumbnail2, Thumbnail3].map((thumb, index) => (
                                 <img 
                                     key={index} 
@@ -97,7 +97,7 @@ const Platinum = () => {
                             ))}
                         </div>
                     </div>
-                        <div className="md:w-1/2 text-start pt-20 sm:px-12">
+                        <div className="md:w-1/2  text-center sm:text-start pt-20 sm:px-12">
                             <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200">57x43x21cm</h2>
                             <p className="text-gray-700 text-2xl">
                                 {t('info')}
