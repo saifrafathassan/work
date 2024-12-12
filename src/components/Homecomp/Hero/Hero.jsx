@@ -89,9 +89,9 @@ const HeroSection = ({ t }) => {
         onClick={() => navigate(slide.link)}
       />
       {/* الصورة الصغيرة أسفل الصورة الكبيرة */}
-      <div className="absolute top-[100px] mt-2 left-[51%] transform -translate-x-1/2 w-[100px] h-[40px] text-white text-center flex items-center justify-center rounded-md z-50">
+      <div className="absolute top-[75px] sm:top-[100px] mt-2 left-[54%] sm:left-[51%] transform -translate-x-1/2 w-[100px] h-[40px] text-white text-center flex items-center justify-center rounded-md z-50">
         {/* محتوى المربع */}
-        <span className="text-5xl font-semibold">{slide.size}</span>
+        <span className="sm:text-5xl text-2xl font-semibold">{slide.size}</span>
       </div>
     </div>
   ))}
