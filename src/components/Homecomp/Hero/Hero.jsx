@@ -19,15 +19,15 @@ import { useNavigate } from 'react-router-dom';
 
 const HeroSection = ({ t }) => {
   const slides = [
-    { image: Slider1, text: t("Diamond"), link: '/products/diamond', size: "72x45x23cm" }, 
     { image: Slider2, text: t("Silver"), link: '/products/Silver',size: "44x39x21cm" }, 
-    { image: Slider3, text: t("Emerald"), link: '/products/emerald',size: "80x50x24cm" }, 
-    { image: Slider4, text: t("Diamond"), link: '/products/diamond',size: "88x50x23cm" }, 
-    { image: Slider5, text: t("Emerald"), link: '/products/emerald',size: "75x48x23cm" }, 
-    { image: Slider6, text: t("Classic"), link: '/products/classic',size: "120x50x21cm" },
-    { image: Slider7, text: t("Classic"), link: '/products/classic',size: "100x50x21cm" },
     { image: Slider8, text: t("Platinum"), link: '/products/platinum',size: "72x45x23cm" },
     { image: Slider9, text: t("Platinum"), link: '/products/platinum',size: "57x43x21cm" },
+    { image: Slider5, text: t("Emerald"), link: '/products/emerald',size: "75x48x23cm" }, 
+    { image: Slider3, text: t("Emerald"), link: '/products/emerald',size: "80x50x24cm" }, 
+    { image: Slider6, text: t("Classic"), link: '/products/classic',size: "120x50x21cm" },
+    { image: Slider7, text: t("Classic"), link: '/products/classic',size: "100x50x21cm" },
+    { image: Slider1, text: t("Diamond"), link: '/products/diamond', size: "72x45x23cm" }, 
+    { image: Slider4, text: t("Diamond"), link: '/products/diamond',size: "88x50x23cm" }, 
   ];
   const navigate = useNavigate();
   const sliderRef = useRef();
@@ -89,7 +89,7 @@ const HeroSection = ({ t }) => {
         onClick={() => navigate(slide.link)}
       />
       {/* الصورة الصغيرة أسفل الصورة الكبيرة */}
-      <div className="absolute top-[100px] left-[51%] transform -translate-x-1/2 w-[100px] h-[40px] text-white text-center flex items-center justify-center rounded-md shadow-lg z-50">
+      <div className="absolute top-[100px] left-[51%] transform -translate-x-1/2 w-[100px] h-[40px] text-white text-center flex items-center justify-center rounded-md z-50">
         {/* محتوى المربع */}
         <span className="text-4xl font-semibold">{slide.size}</span>
       </div>

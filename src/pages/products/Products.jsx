@@ -22,13 +22,6 @@ const Products = () => {
 
   const products = [
     {
-      category: 'Diamond',
-      items: [
-        { image: Slider1, title: '72x45x23cm', description: t("info") },
-        { image: Slider4, title: '88x50x23cm', description: t("info") },
-      ],
-    },
-    {
       category: 'Silver',
       items: [
         { image: Slider3, title: '44x39x21cm', description: t("info") },
@@ -36,10 +29,10 @@ const Products = () => {
       ],
     },
     {
-      category: 'Classic',
+      category: 'Platinum',
       items: [
-        { image: Slider7, title: '100x50x21cm', description: t("info") },
-        { image: Slider6, title: '120x50x21cm', description: t("info") },
+        { image: Slider9, title: '57x43x21cm', description: t("info") },
+        { image: Slider8, title: '72x45x23cm', description: t("info") },
       ],
     },
     {
@@ -50,10 +43,17 @@ const Products = () => {
       ],
     },
     {
-      category: 'Platinum',
+      category: 'Classic',
       items: [
-        { image: Slider9, title: '57x43x21cm', description: t("info") },
-        { image: Slider8, title: '72x45x23cm', description: t("info") },
+        { image: Slider7, title: '100x50x21cm', description: t("info") },
+        { image: Slider6, title: '120x50x21cm', description: t("info") },
+      ],
+    },
+    {
+      category: 'Diamond',
+      items: [
+        { image: Slider1, title: '72x45x23cm', description: t("info") },
+        { image: Slider4, title: '88x50x23cm', description: t("info") },
       ],
     },
   ];
