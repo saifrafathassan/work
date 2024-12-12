@@ -48,7 +48,7 @@ function Footer({ t }) {
     </div>
 
     {/* العمود الثالث: الاتصال */}
-    <div className="lg:w-auto w-full px-4">
+    <div className="lg:w-auto w-full sm:px-4">
   <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3 ">
     {t('Contact')}
   </h2>
