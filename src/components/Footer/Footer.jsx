@@ -53,9 +53,9 @@ function Footer({ t }) {
     {t('Contact')}
   </h2>
   <nav className="list-none mb-10">
-    <li className="flex items-center justify-center md:justify-start gap-1 text-white">
-      <FiPhone className="mr-2 text-lg" />
-      <span>0224949473</span>
+    <li className="flex items-center justify-center md:justify-start gap-1 pe-4 sm:pe-0 text-white">
+      <FiPhone className="text-lg" />
+      <span className='ps-1'>0224949473</span>
     </li>
     <li className="flex items-center justify-center md:justify-start gap-1 text-white py-2">
       <FaLocationDot className="mr-2 text-lg" />
