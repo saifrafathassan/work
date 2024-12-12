@@ -19,15 +19,15 @@ import { useNavigate } from 'react-router-dom';
 
 const HeroSection = ({ t }) => {
   const slides = [
-    { image: Slider1, text: t("Diamond"), link: '/products/diamond', size: "72x45x23CM" }, 
-    { image: Slider2, text: t("Silver"), link: '/products/Silver',size: "44x39x21CM" }, 
-    { image: Slider3, text: t("Emerald"), link: '/products/emerald',size: "80x50x24CM" }, 
-    { image: Slider4, text: t("Diamond"), link: '/products/diamond',size: "88x50x23CM" }, 
-    { image: Slider5, text: t("Emerald"), link: '/products/emerald',size: "75x48x23CM" }, 
-    { image: Slider6, text: t("Classic"), link: '/products/classic',size: "120x50x21CM" },
-    { image: Slider7, text: t("Classic"), link: '/products/classic',size: "100x50x21CM" },
-    { image: Slider8, text: t("Platinum"), link: '/products/platinum',size: "72x45x23CM" },
-    { image: Slider9, text: t("Platinum"), link: '/products/platinum',size: "57x43x21CM" },
+    { image: Slider1, text: t("Diamond"), link: '/products/diamond', size: "72x45x23cm" }, 
+    { image: Slider2, text: t("Silver"), link: '/products/Silver',size: "44x39x21cm" }, 
+    { image: Slider3, text: t("Emerald"), link: '/products/emerald',size: "80x50x24cm" }, 
+    { image: Slider4, text: t("Diamond"), link: '/products/diamond',size: "88x50x23cm" }, 
+    { image: Slider5, text: t("Emerald"), link: '/products/emerald',size: "75x48x23cm" }, 
+    { image: Slider6, text: t("Classic"), link: '/products/classic',size: "120x50x21cm" },
+    { image: Slider7, text: t("Classic"), link: '/products/classic',size: "100x50x21cm" },
+    { image: Slider8, text: t("Platinum"), link: '/products/platinum',size: "72x45x23cm" },
+    { image: Slider9, text: t("Platinum"), link: '/products/platinum',size: "57x43x21cm" },
   ];
   const navigate = useNavigate();
   const sliderRef = useRef();
