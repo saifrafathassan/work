@@ -83,13 +83,13 @@ const HeroSection = ({ t }) => {
   {slides.map((slide, index) => (
     
     <div key={index} className="relative pt-20 md:pt-[155px]">
-      <div className="absolute top-0 left-3 w-full text-center pt-14">
+      <div className="absolute top-0 left-3 w-full text-center pt-5 sm:pt-14">
         <h2 className="text-white text-2xl sm:text-5xl font-bold">{slide.text}</h2>
       </div>
       {/* الصورة الكبيرة */}
       <img
         className={`w-[70%] h-[300px] sm:w-[70%] sm:h-[500px] object-contain mx-auto cursor-pointer ${
-          currentSlide === index && slide.isCustom ? 'custom-small' : 'h-[500px]' 
+          currentSlide === index && slide.isCustom ? 'sm:w-[450px] w-[190px]' : '' 
         }`}
         
         src={slide.image}
@@ -98,7 +98,7 @@ const HeroSection = ({ t }) => {
       />
       
 
-      <div className="absolute top-[75px] sm:top-[100px] mt-2 left-[54%] sm:left-[51%] transform -translate-x-1/2 w-[100px] h-[40px] text-white text-center flex items-center justify-center rounded-md z-50">
+      <div className="absolute top-[45px] sm:top-[100px] mt-2 left-[54%] sm:left-[51%] transform -translate-x-1/2 w-[100px] h-[40px] text-white text-center flex items-center justify-center rounded-md z-50">
         {/* محتوى المربع */}
         <span className="sm:text-5xl text-2xl font-semibold">{slide.size}</span>
       </div>

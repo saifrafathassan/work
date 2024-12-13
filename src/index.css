@@ -63,11 +63,12 @@
     .arrow {
         padding: 3px;
     }
+    .custom-small {
+        width: 200px !important;
+    }
 }
 
 
 .custom-small {
-    height: 400px !important;
-    margin-top: 40px !important;
-  }
-  
+    width: 450px ;
+}

@@ -31,9 +31,9 @@ const Silver = () => {
                 <div className="grid grid-cols-1 gap-10 lg:mx-14">
                     {/* المنتج الأول */}
                     <div className="flex flex-col md:flex-row gap-6 pb-32">
-                        <div className="md:w-1/2 shadow-3xl relative">
+                        <div className="md:w-1/2 relative">
                         {/* الصورة الرئيسية */}
-                        <div className='w-[80%] sm:h-[600px] justify-center mx-auto flex items-center'>
+                        <div className='w-[100%] sm:h-[600px] justify-center mx-auto flex items-center'>
                             <img 
                                 src={currentImage} 
                                 alt="Product 1" 
@@ -42,7 +42,7 @@ const Silver = () => {
                         </div>
 
                         {/* الصور المصغرة */} 
-                        <div className="absolute bottom-[-80px] sm:top-0 sm:start-[-100px] flex sm:flex-col gap-1 w-full">
+                        <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full">
                             {[ProductImage1, Thumbnail1, Thumbnail2, Thumbnail3, Thumbnail4].map((thumb, index) => (
                                 <img 
                                     key={index} 
@@ -83,7 +83,7 @@ const Silver = () => {
 
                     {/* المنتج الثاني */} 
                     <div className="flex flex-col md:flex-row gap-6 pb-12">
-                    <div className="md:w-1/2 shadow-3xl relative ">
+                    <div className="md:w-1/2 relative ">
                         {/* الصورة الرئيسية */}
                         <div className='w-[100%] sm:h-[600px] justify-center flex items-center'>
                             <img 
