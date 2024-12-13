@@ -27,7 +27,7 @@ const Platinum = () => {
 
             {/* قسم المنتجات */}
             <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="container mx-auto px-4 py-24">
-                <div className="grid grid-cols-1 gap-10">
+                <div className="grid grid-cols-1 gap-10 lg:mx-14">
                     {/* المنتج الأول */}
                     <div className="flex flex-col md:flex-row gap-6 pb-32">
                         <div className="md:w-1/2 shadow-3xl relative">
