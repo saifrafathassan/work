@@ -33,7 +33,7 @@ const Silver = () => {
                     <div className="flex flex-col md:flex-row gap-6 pb-32">
                         <div className="md:w-1/2 shadow-3xl relative">
                         {/* الصورة الرئيسية */}
-                        <div className='w-[80%] sm:h-[500px] my-10 justify-center mx-auto flex items-center'>
+                        <div className='w-[80%] sm:h-[600px] justify-center mx-auto flex items-center'>
                             <img 
                                 src={currentImage} 
                                 alt="Product 1" 
@@ -64,7 +64,7 @@ const Silver = () => {
                     <div className="md:w-1/2 text-center sm:text-start sm:px-12 sm:mt-0 mt-20">
                     {/* العنوان مع خط رمادي */}
                     <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200 border-b-[1px] border-gray-300 pb-5">
-                        {t('Kiro Stainless steel')}
+                        {t('Kiro Stainless steel')} 44x39x21{t('cm')}
                     </h2>
 
                     {/* الفقرة مع خط رمادي */}
@@ -82,7 +82,7 @@ const Silver = () => {
                     <div className="flex flex-col md:flex-row gap-6 pb-12">
                     <div className="md:w-1/2 shadow-3xl relative ">
                         {/* الصورة الرئيسية */}
-                        <div className='w-auto m-6 sm:h-[600px] justify-center flex items-center'>
+                        <div className='w-[100%] sm:h-[600px] justify-center flex items-center'>
                             <img 
                                 src={currentImage2} 
                                 alt="Product 1" 
