@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useRef  } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
 import ProductImage1 from '../../assets/slide3.webp';
 import ProductImage2 from '../../assets/slide3.webp';
-import Thumbnail1 from '../../assets/1.png'; // الصورة المصغرة الأولى
-import Thumbnail2 from '../../assets/2.png'; // الصورة المصغرة الثانية
+import Thumbnail1 from '../../assets/04.png'; // الصورة المصغرة الأولى
+import Thumbnail2 from '../../assets/03.png'; // الصورة المصغرة الثانية
 import Thumbnail3 from '../../assets/01.png'; // الصورة المصغرة الثالثة
 import Thumbnail4 from '../../assets/wht.jpeg'; // الصورة المصغرة الثالثة
 import stage from '../../assets/stage.png'; // الصورة التي ستوضع تحت المنتج الأول
@@ -22,6 +22,28 @@ const Silver = () => {
     // حالة لتخزين الصورة الحالية
     const [currentImage, setCurrentImage] = useState(ProductImage1);
     const [currentImage2, setCurrentImage2] = useState(ProductImage2);
+
+    const [scale, setScale] = useState(1); 
+    const [position, setPosition] = useState({ x: 0, y: 0 }); 
+    const imageRef = useRef(null); 
+
+    const handleMouseMove = (e) => {
+        const { left, top, width, height } = imageRef.current.getBoundingClientRect();
+        const mouseX = e.clientX - left;
+        const mouseY = e.clientY - top;
+        setPosition({
+            x: (mouseX / width) * 100,
+            y: (mouseY / height) * 100,
+        });
+    };
+
+    const handleMouseEnter = () => {
+        setScale(2); // تكبير الصورة عند دخول الماوس
+    };
+
+    const handleMouseLeave = () => {
+        setScale(1); // إعادة الصورة لحجمها الأصلي عند مغادرة الماوس
+    };
 
     return (
         <>
@@ -90,11 +112,20 @@ const Silver = () => {
                     <div className="flex flex-col md:flex-row gap-6 pb-12">
                     <div className="md:w-1/2 relative ">
                         {/* الصورة الرئيسية */}
-                        <div className='w-[100%] sm:h-[600px] justify-center flex items-center'>
+                        <div  className='w-[100%] overflow-hidden sm:h-[600px] justify-center flex items-center'>
                             <img 
-                                src={currentImage2} 
-                                alt="Product 1" 
-                                className="w-auto hover:scale-110 p-8 mx-auto object-cover duration-200 rounded-lg z-50 relative" 
+                                    src={currentImage2} 
+                                    alt="Product 1" 
+                                    className="w-auto p-8 mx-auto object-cover rounded-lg z-50 relative" 
+                                    onMouseMove={handleMouseMove} 
+                                    onMouseEnter={handleMouseEnter} 
+                                    onMouseLeave={handleMouseLeave} 
+                                    ref={imageRef}
+                                    style={{
+                                        transform: `scale(${scale})`,
+                                        transformOrigin: `${position.x}% ${position.y}%`, 
+                                        transition: 'transform 0.2s ease', 
+                                    }}
                             />
                         </div>
 
