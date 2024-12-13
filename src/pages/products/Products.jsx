@@ -14,6 +14,7 @@ import Slider8 from '../../assets/slide8.webp';
 import Slider9 from '../../assets/slide9.webp';
 import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 
 const Products = () => {
@@ -24,36 +25,36 @@ const Products = () => {
     {
       category: 'Silver',
       items: [
-        { image: Slider3, title: '44x39x21cm', description: t("info") },
-        { image: Slider3, title: '50x43x21cm', description: t("info") },
+        { image: Slider3, title: '44x39x21cm', description: t("info"), link: '/products/silver' },
+        { image: Slider3, title: '50x43x21cm', description: t("info"), link: '/products/silver' },
       ],
     },
     {
       category: 'Platinum',
       items: [
-        { image: Slider9, title: '57x43x21cm', description: t("info") },
-        { image: Slider8, title: '72x45x23cm', description: t("info") },
+        { image: Slider9, title: '57x43x21cm', description: t("info"), link: '/products/platinum' },
+        { image: Slider8, title: '72x45x23cm', description: t("info"), link: '/products/platinum' },
       ],
     },
     {
       category: 'Emerald',
       items: [
-        { image: Slider5, title: '75x48x23cm', description: t("info") },
-        { image: Slider2, title: '80x50x24cm', description: t("info") },
+        { image: Slider5, title: '75x48x23cm', description: t("info"), link: '/products/emerald' },
+        { image: Slider2, title: '80x50x24cm', description: t("info"), link: '/products/emerald' },
       ],
     },
     {
       category: 'Classic',
       items: [
-        { image: Slider7, title: '100x50x21cm', description: t("info") },
-        { image: Slider6, title: '120x50x21cm', description: t("info") },
+        { image: Slider7, title: '100x50x21cm', description: t("info"), link: '/products/classic' },
+        { image: Slider6, title: '120x50x21cm', description: t("info"), link: '/products/classic' },
       ],
     },
     {
       category: 'Diamond',
       items: [
-        { image: Slider1, title: '72x45x23cm', description: t("info") },
-        { image: Slider4, title: '88x50x23cm', description: t("info") },
+        { image: Slider1, title: '72x45x23cm', description: t("info"), link: '/products/diamond' },
+        { image: Slider4, title: '88x50x23cm', description: t("info"), link: '/products/diamond' },
       ],
     },
   ];
@@ -94,9 +95,11 @@ const Products = () => {
             </p>
 
             {/* زرار التفاصيل */}
+              <Link onClick={() => window.scrollTo(0,0)} to={product.link}>
             <button className="bg-main text-white py-3 px-24 rounded-lg hover:bg-blue-500 transition text-lg">
               {t('Details')}
             </button>
+              </Link>
           </div>
         ))}
       </div>

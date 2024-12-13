@@ -5,9 +5,9 @@ import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
 import ProductImage1 from '../../assets/slide1.webp';
 import ProductImage2 from '../../assets/slide4.webp';
-import Thumbnail1 from '../../assets/thb5.png'; // الصورة المصغرة الأولى
-import Thumbnail2 from '../../assets/thb6.png'; // الصورة المصغرة الثانية
-import Thumbnail3 from '../../assets/thb4.png'; // الصورة المصغرة الثالثة
+import Thumbnail1 from '../../assets/wht.jpeg'; // الصورة المصغرة الأولى
+import Thumbnail2 from '../../assets/6.png'; // الصورة المصغرة الثانية
+import Thumbnail3 from '../../assets/4.png'; // الصورة المصغرة الثالثة
 import stage from '../../assets/stage.png'; // الصورة التي ستوضع تحت المنتج الأول
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
@@ -32,7 +32,7 @@ const Diamond = () => {
                     <div className="flex flex-col md:flex-row gap-6 pb-32">
                         <div className="md:w-1/2 shadow-3xl relative">
                         {/* الصورة الرئيسية */}
-                        <div className='w-auto sm:h-[500px] justify-center flex items-center'>
+                        <div className='w-auto m-8 sm:h-[500px] justify-center flex items-center'>
                             <img 
                                 src={currentImage} 
                                 alt="Product 1" 
@@ -41,8 +41,8 @@ const Diamond = () => {
                         </div>
 
                         {/* الصور المصغرة */}
-                        <div className="absolute bottom-[-80px] w-full flex justify-center sm:justify-start gap-1">
-                            {[ProductImage1, Thumbnail2, Thumbnail3].map((thumb, index) => (
+                        <div className="absolute bottom-[-80px] sm:top-0 sm:start-[-100px] flex sm:flex-col gap-3 w-full">
+                            {[ProductImage1, Thumbnail2, Thumbnail3, Thumbnail1].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 
@@ -50,7 +50,7 @@ const Diamond = () => {
                                     onClick={() => setCurrentImage(thumb)} 
                                     className={`cursor-pointer hover:scale-125 duration-200 border-2 rounded-md ${
                                         currentImage === thumb 
-                                            ? 'border-main w-20 h-16 object-contain' 
+                                            ? 'border-main w-16 h-16 object-contain' 
                                             : 'border-gray-300 w-16 h-16 object-cover'
                                     }`}
                                 />
@@ -60,19 +60,27 @@ const Diamond = () => {
 
 
 
-                        <div className="md:w-1/2 text-center sm:text-start pt-20 sm:px-12">
-                            <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200">72x45x23cm</h2>
-                            <p className="text-gray-700 text-2xl">
-                                {t('info')}
-                            </p>
-                        </div>
+                    <div className="md:w-1/2 text-center sm:text-start sm:px-12">
+                    {/* العنوان مع خط رمادي */}
+                    <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200 border-b-[1px] border-gray-300 pb-5">
+                        {t('Kiro Stainless steel')}
+                    </h2>
+
+                    {/* الفقرة مع خط رمادي */}
+                    <p className="text-gray-700 text-2xl border-b-[1px] border-gray-300 pb-5 mb-4">
+                        {t('info')}
+                    </p>
+                    <p className="text-gray-700 text-2xl border-b-[1px] border-gray-300 pb-5 mb-4">{t('Size')} 72x45x23{t('cm')}</p>
+                    <p className="text-gray-700 text-2xl border-b-[1px] border-gray-300 pb-5 mb-4">{t('Warranty: Lifetime')}</p>
+                    <p className="text-gray-700 text-2xl pb-5 mb-4">{t('Brand: Kiro Stainless steel')}</p>
+                    </div>
                     </div>
 
                     {/* المنتج الثاني */} 
                     <div className="flex flex-col md:flex-row gap-6 pb-12">
                     <div className="md:w-1/2 shadow-3xl relative ">
                         {/* الصورة الرئيسية */}
-                        <div className='w-auto sm:h-[600px] justify-center flex items-center'>
+                        <div className='w-auto m-8 sm:h-[500px] justify-center flex items-center'>
                             <img 
                                 src={currentImage2} 
                                 alt="Product 1" 
@@ -81,8 +89,8 @@ const Diamond = () => {
                         </div>
 
                         {/* الصور المصغرة */}
-                        <div className="absolute bottom-[-80px] w-full flex justify-center sm:justify-start gap-1">
-                            {[ProductImage2, Thumbnail2, Thumbnail3].map((thumb, index) => (
+                        <div className="absolute bottom-[-80px] sm:top-0 sm:start-[-100px] flex sm:flex-col gap-3 w-full">
+                            {[ProductImage2, Thumbnail2, Thumbnail3, Thumbnail1].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 
@@ -90,19 +98,27 @@ const Diamond = () => {
                                     onClick={() => setCurrentImage2(thumb)} 
                                     className={`cursor-pointer hover:scale-125 duration-200 border-2 rounded-md ${
                                         currentImage2 === thumb 
-                                            ? 'border-main w-20 h-16 object-contain' 
+                                            ? 'border-main w-16 h-16 object-contain' 
                                             : 'border-gray-300 w-16 h-16 object-cover'
                                     }`}
                                 />
                             ))}
                         </div>
                     </div>
-                        <div className="md:w-1/2  text-center sm:text-start pt-20 sm:px-12">
-                            <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200">88x50x23cm</h2>
-                            <p className="text-gray-700 text-2xl">
-                                {t('info')}
-                            </p>
-                        </div>
+                    <div className="md:w-1/2 text-center sm:text-start sm:px-12">
+                    {/* العنوان مع خط رمادي */}
+                    <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200 border-b-[1px] border-gray-300 pb-5">
+                        {t('Kiro Stainless steel')}
+                    </h2>
+
+                    {/* الفقرة مع خط رمادي */}
+                    <p className="text-gray-700 text-2xl border-b-[1px] border-gray-300 pb-5 mb-4">
+                        {t('info')}
+                    </p>
+                    <p className="text-gray-700 text-2xl border-b-[1px] border-gray-300 pb-5 mb-4">{t('Size')} 88x50x23{t('cm')}</p>
+                    <p className="text-gray-700 text-2xl border-b-[1px] border-gray-300 pb-5 mb-4">{t('Warranty: Lifetime')}</p>
+                    <p className="text-gray-700 text-2xl pb-5 mb-4">{t('Brand: Kiro Stainless steel')}</p>
+                    </div>
                     </div>
                 </div>
             </div>
