@@ -12,7 +12,7 @@ import Slider6 from '../../assets/slide6.webp';
 import Slider7 from '../../assets/slide7.webp';
 import Slider8 from '../../assets/slide8.webp';
 import Slider9 from '../../assets/slide9.webp';
-import Slider10 from '../../assets/slide10.png';
+import Slider10 from '../../assets/slide12.png';
 import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';

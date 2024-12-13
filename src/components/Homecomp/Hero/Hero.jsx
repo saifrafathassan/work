@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import Slider1 from '../../../assets/slide1.webp';
 import Slider2 from '../../../assets/slide3.webp';
-import Slider10 from '../../../assets/slide10.png';
+import Slider10 from '../../../assets/slide14.png';
 import Slider3 from '../../../assets/slide2.webp';
 import Slider4 from '../../../assets/slide4.webp';
 import Slider5 from '../../../assets/slide5.webp';

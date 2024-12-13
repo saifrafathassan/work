@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
-import ProductImage1 from '../../assets/slide11.png';
+import ProductImage1 from '../../assets/slide12.png';
 import ProductImage2 from '../../assets/slide3.webp';
 import Thumbnail1 from '../../assets/04.png'; // الصورة المصغرة الأولى
 import Thumbnail2 from '../../assets/03.png'; // الصورة المصغرة الثانية
