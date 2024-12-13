@@ -66,4 +66,8 @@
 }
 
 
-
+.custom-small {
+    height: 400px !important;
+    margin-top: 40px !important;
+  }
+  

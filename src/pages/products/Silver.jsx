@@ -63,17 +63,20 @@ const Silver = () => {
 
                     <div className="md:w-1/2 text-center sm:text-start sm:px-12 sm:mt-0 mt-20">
                     {/* العنوان مع خط رمادي */}
-                    <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200 border-b-[1px] border-gray-300 pb-5">
+                    <h2 className="text-3xl font-bold text-main mb-4 hover:text-blue-500 duration-200 border-b-[1px] border-gray-300 pb-5">
                         {t('Kiro Stainless steel')} 44x39x21{t('cm')}
                     </h2>
 
                     {/* الفقرة مع خط رمادي */}
-                    <p className="text-gray-700 text-2xl border-b-[1px] border-gray-300 pb-5 mb-4">
+                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4">
                         {t('info')}
                     </p>
-                    <p className="text-gray-700 text-2xl border-b-[1px] border-gray-300 pb-5 mb-4">{t('Size')} 44x39x21{t('cm')}</p>
-                    <p className="text-gray-700 text-2xl border-b-[1px] border-gray-300 pb-5 mb-4">{t('Warranty: Lifetime')}</p>
-                    <p className="text-gray-700 text-2xl pb-5 mb-4">{t('Brand: Kiro Stainless steel')}</p>
+                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Size')}</span>  44x39x21{t('cm')}</p>
+                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Warranty')}</span> {t('Lifetime')}</p>
+                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('color')}</span> {t('gray')}</p>
+                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Materials')}</span> {t('stainless steel high-quality')}</p>
+                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Exchangetype')}</span> {t('network')}</p>
+                    <p className="text-gray-700 text-xl pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Item shape')}</span> {t('rectangular')}</p>
                     </div>
 
                     </div>

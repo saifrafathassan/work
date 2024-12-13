@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import Slider1 from '../../../assets/slide1.webp';
 import Slider2 from '../../../assets/slide3.webp';
+import Slider10 from '../../../assets/slide3.webp';
 import Slider3 from '../../../assets/slide2.webp';
 import Slider4 from '../../../assets/slide4.webp';
 import Slider5 from '../../../assets/slide5.webp';
@@ -19,8 +20,8 @@ import { useNavigate } from 'react-router-dom';
 
 const HeroSection = ({ t }) => {
   const slides = [
-    { image: Slider2, text: t("Silver"), link: '/products/Silver',size: "44x39x21cm" }, 
-    { image: Slider2, text: t("Silver"), link: '/products/Silver',size: "50x43x21cm" }, 
+    { image: Slider10, text: t("Silver"), link: '/products/Silver',size: "50x43x21cm" }, 
+    { image: Slider2, text: t("Silver"), link: '/products/Silver',size: "44x39x21cm", isCustom: true }, 
     { image: Slider8, text: t("Platinum"), link: '/products/platinum',size: "72x45x23cm" },
     { image: Slider9, text: t("Platinum"), link: '/products/platinum',size: "57x43x21cm" },
     { image: Slider5, text: t("Emerald"), link: '/products/emerald',size: "75x48x23cm" }, 
@@ -35,7 +36,8 @@ const HeroSection = ({ t }) => {
   const [isHovered, setIsHovered] = useState(false);
   const sectionRef = useRef();
   const [isVisible, setIsVisible] = useState(false);
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState('');
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,18 +79,24 @@ const HeroSection = ({ t }) => {
       }}
     >
 <Slider ref={sliderRef} {...settings}>
+  
   {slides.map((slide, index) => (
+    
     <div key={index} className="relative pt-20 md:pt-[155px]">
       <div className="absolute top-0 left-3 w-full text-center pt-14">
         <h2 className="text-white text-2xl sm:text-5xl font-bold">{slide.text}</h2>
       </div>
       {/* الصورة الكبيرة */}
       <img
-        className='w-[70%] h-[300px] sm:w-[70%] sm:h-[500px] object-contain mx-auto cursor-pointer'
+        className={`w-[70%] h-[300px] sm:w-[70%] sm:h-[500px] object-contain mx-auto cursor-pointer ${
+          currentSlide === index && slide.isCustom ? 'custom-small' : 'h-[500px]' 
+        }`}
+        
         src={slide.image}
         alt={`heroimg${index}`}
         onClick={() => navigate(slide.link)}
       />
+      
 
       <div className="absolute top-[75px] sm:top-[100px] mt-2 left-[54%] sm:left-[51%] transform -translate-x-1/2 w-[100px] h-[40px] text-white text-center flex items-center justify-center rounded-md z-50">
         {/* محتوى المربع */}
