@@ -7,7 +7,7 @@ import ProductImage1 from '../../assets/slide3.webp';
 import ProductImage2 from '../../assets/slide3.webp';
 import Thumbnail1 from '../../assets/1.png'; // الصورة المصغرة الأولى
 import Thumbnail2 from '../../assets/2.png'; // الصورة المصغرة الثانية
-import Thumbnail3 from '../../assets/3.png'; // الصورة المصغرة الثالثة
+import Thumbnail3 from '../../assets/01.png'; // الصورة المصغرة الثالثة
 import Thumbnail4 from '../../assets/wht.jpeg'; // الصورة المصغرة الثالثة
 import stage from '../../assets/stage.png'; // الصورة التي ستوضع تحت المنتج الأول
 import { useTranslation } from 'react-i18next';
