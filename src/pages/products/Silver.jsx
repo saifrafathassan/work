@@ -37,7 +37,7 @@ const Silver = () => {
                             <img 
                                 src={currentImage} 
                                 alt="Product 1" 
-                                className="w-auto hover:scale-110 p-8 mx-auto object-cover duration-200 rounded-lg z-50 relative" 
+                                className="w-auto hover:scale-150 p-8 mx-auto object-cover duration-200 rounded-lg z-50 relative" 
                             />
                         </div>
 
