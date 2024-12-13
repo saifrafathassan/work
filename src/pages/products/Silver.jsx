@@ -12,6 +12,8 @@ import Thumbnail4 from '../../assets/wht.jpeg'; // الصورة المصغرة �
 import stage from '../../assets/stage.png'; // الصورة التي ستوضع تحت المنتج الأول
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 const Silver = () => {
     const { t } = useTranslation();
@@ -34,11 +36,14 @@ const Silver = () => {
                         <div className="md:w-1/2 relative">
                         {/* الصورة الرئيسية */}
                         <div className='w-[100%] sm:h-[600px] justify-center mx-auto flex items-center'>
+                            <Zoom closeOnScroll={true}>
                             <img 
                                 src={currentImage} 
                                 alt="Product 1" 
-                                className="w-auto hover:scale-150 p-8 mx-auto object-cover duration-200 rounded-lg z-50 relative" 
+                                className="w-auto p-8 mx-auto object-cover rounded-lg z-50 relative" 
                             />
+
+                            </Zoom>
                         </div>
 
                         {/* الصور المصغرة */} 
