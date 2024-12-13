@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
-import ProductImage1 from '../../assets/slide3.webp';
+import ProductImage1 from '../../assets/slide11.png';
 import ProductImage2 from '../../assets/slide3.webp';
 import Thumbnail1 from '../../assets/04.png'; // الصورة المصغرة الأولى
 import Thumbnail2 from '../../assets/03.png'; // الصورة المصغرة الثانية
@@ -57,7 +57,7 @@ const Silver = () => {
                     <div className="flex flex-col md:flex-row gap-6 pb-32">
                         <div className="md:w-1/2 relative">
                         {/* الصورة الرئيسية */}
-                        <div className='w-[100%] sm:h-[600px] justify-center mx-auto flex items-center'>
+                        <div className='w-full sm:h-[500px] justify-center mx-auto flex items-center'>
                             <Zoom closeOnScroll={true}>
                             <img 
                                 src={currentImage} 
