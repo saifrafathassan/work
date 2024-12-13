@@ -89,7 +89,7 @@ const HeroSection = ({ t }) => {
       {/* الصورة الكبيرة */}
       <img
         className={`w-[70%] h-[300px] sm:w-[70%] sm:h-[500px] object-contain mx-auto cursor-pointer ${
-          currentSlide === index && slide.isCustom ? 'sm:w-[400px] w-[180px]' : '' 
+          currentSlide === index && slide.isCustom ? 'sm:w-[390px] w-[200px]' : '' 
         }`}
         
         src={slide.image}
