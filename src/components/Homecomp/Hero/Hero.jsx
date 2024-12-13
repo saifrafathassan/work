@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import Slider1 from '../../../assets/slide1.webp';
 import Slider2 from '../../../assets/slide3.webp';
-import Slider10 from '../../../assets/slide3.webp';
+import Slider10 from '../../../assets/slide10.png';
 import Slider3 from '../../../assets/slide2.webp';
 import Slider4 from '../../../assets/slide4.webp';
 import Slider5 from '../../../assets/slide5.webp';
@@ -20,8 +20,8 @@ import { useNavigate } from 'react-router-dom';
 
 const HeroSection = ({ t }) => {
   const slides = [
-    { image: Slider10, text: t("Silver"), link: '/products/Silver',size: "50x43x21cm" }, 
-    { image: Slider2, text: t("Silver"), link: '/products/Silver',size: "44x39x21cm", isCustom: true }, 
+    { image: Slider2, text: t("Silver"), link: '/products/Silver',size: "50x43x21cm" }, 
+    { image: Slider10, text: t("Silver"), link: '/products/Silver',size: "44x39x21cm" }, 
     { image: Slider8, text: t("Platinum"), link: '/products/platinum',size: "72x45x23cm" },
     { image: Slider9, text: t("Platinum"), link: '/products/platinum',size: "57x43x21cm" },
     { image: Slider5, text: t("Emerald"), link: '/products/emerald',size: "75x48x23cm" }, 
@@ -88,9 +88,7 @@ const HeroSection = ({ t }) => {
       </div>
       {/* الصورة الكبيرة */}
       <img
-        className={`w-[70%] h-[300px] sm:w-[70%] sm:h-[500px] object-contain mx-auto cursor-pointer ${
-          currentSlide === index && slide.isCustom ? 'sm:w-[390px] w-[200px]' : '' 
-        }`}
+        className='w-[70%] h-[300px] sm:w-[70%] sm:h-[500px] object-contain mx-auto cursor-pointer'
         
         src={slide.image}
         alt={`heroimg${index}`}
