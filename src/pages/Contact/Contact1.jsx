@@ -73,7 +73,7 @@ const Contact1 = ({t}) => {
         </div>
         {/* خريطة جوجل */}
         <div className="w-full ">
-            {/* عنوان المعرض */}
+            {/* عنوان المصنع */}
             <div className="mb-4">
                 <a 
                     href="https://www.google.com/maps/place/30.13751407487679,31.334234275557307" 
@@ -86,7 +86,7 @@ const Contact1 = ({t}) => {
             </div>
 
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3450.486146316989!2d31.334234275557307!3d30.13751407487679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDA4JzE1LjEiTiAzMcKwMjAnMTIuNSJF!5e0!3m2!1sen!2seg!4v1734134645477!5m2!1sen!2seg"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3487.861486413836!2d31.142087500000006!3d29.050677800000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145a2566c80e986f%3A0xe3ab6fd202d1a422!2z2YXYtdmG2Lkg2LPZitmB2YrZhiDYp9iz2KrZitmE!5e0!3m2!1sen!2seg!4v1734271158822!5m2!1sen!2seg"
                 width="100%"
                 height="500px"
                 style={{ border: 0 }}
@@ -101,3 +101,6 @@ const Contact1 = ({t}) => {
 };
 
 export default withTranslation()(Contact1);
+
+
+// "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3487.861486413836!2d31.142087500000006!3d29.050677800000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145a2566c80e986f%3A0xe3ab6fd202d1a422!2z2YXYtdmG2Lkg2LPZitmB2YrZhiDYp9iz2KrZitmE!5e0!3m2!1sen!2seg!4v1734271158822!5m2!1sen!2seg"
