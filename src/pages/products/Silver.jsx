@@ -12,8 +12,11 @@ import Thumbnail4 from '../../assets/wht.jpeg'; // الصورة المصغرة �
 import stage from '../../assets/stage.png'; // الصورة التي ستوضع تحت المنتج الأول
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
+import {FaTimes} from 'react-icons/fa'
+import {IoMdArrowDropleft, IoMdArrowDropright} from 'react-icons/io'
+import Modal from 'react-modal';
+
+const images = [ProductImage1, Thumbnail1, Thumbnail2, Thumbnail3, Thumbnail4];
 
 const Silver = () => {
     const { t } = useTranslation();
@@ -21,29 +24,29 @@ const Silver = () => {
 
     // حالة لتخزين الصورة الحالية
     const [currentImage, setCurrentImage] = useState(ProductImage1);
-    const [currentImage2, setCurrentImage2] = useState(ProductImage2);
 
-    const [scale, setScale] = useState(1); 
-    const [position, setPosition] = useState({ x: 0, y: 0 }); 
-    const imageRef = useRef(null); 
-
-    const handleMouseMove = (e) => {
-        const { left, top, width, height } = imageRef.current.getBoundingClientRect();
-        const mouseX = e.clientX - left;
-        const mouseY = e.clientY - top;
-        setPosition({
-            x: (mouseX / width) * 100,
-            y: (mouseY / height) * 100,
-        });
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+    
+    
+    const openModal = (index) => {
+        setSelectedImageIndex(index);
+        setModalIsOpen(true);
+        document.body.style.overflow = 'hidden'; // تعطيل التمرير
     };
-
-    const handleMouseEnter = () => {
-        setScale(2); // تكبير الصورة عند دخول الماوس
+    
+    const closeModal = () => {
+        setModalIsOpen(false);
+        document.body.style.overflow = 'auto'; // استعادة التمرير
     };
-
-    const handleMouseLeave = () => {
-        setScale(1); // إعادة الصورة لحجمها الأصلي عند مغادرة الماوس
-    };
+    
+      const nextImage = () => {
+        setSelectedImageIndex((selectedImageIndex + 1) % images.length);
+      }
+    
+      const prevImage = () => {
+        setSelectedImageIndex((selectedImageIndex + images.length - 1) % images.length);
+      }
 
     return (
         <>
@@ -58,14 +61,68 @@ const Silver = () => {
                         <div className="md:w-1/2 relative">
                         {/* الصورة الرئيسية */}
                         <div className='w-full sm:h-[500px] justify-center mx-auto flex items-center'>
-                            <Zoom closeOnScroll={true}>
+
                             <img 
+                                onClick={() => openModal(images.indexOf(currentImage))}
                                 src={currentImage} 
                                 alt="Product 1" 
-                                className="w-auto p-8 mx-auto object-cover rounded-lg z-50 relative" 
+                                className="w-auto p-8 mx-auto object-cover rounded-lg z-50 relative cursor-pointer" 
                             />
+            <Modal
+        isOpen={modalIsOpen} 
+        onRequestClose={closeModal}
+        contentLabel="Example Modal"
+        style={{
+            content: {
+                backgroundColor: '#fff',
+            display: 'flex',  
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: '100%',
+            height: '100%',
+            boxShadow: 'none',
+            border: 'none',
+            },
+            overlay: {
+            position: 'fixed',
+            top: 0,
+            left: 0, 
+            right: 0,
+            bottom: 0,
+            zIndex: '1500'
+            },
+        }}
+        >
+  <button className='bg-black rounded-md py-2 px-3 text-gray-400 z-40' style={{position: 'absolute', top: '20px', left: '20px'}} onClick={closeModal}>
+    <FaTimes size={30}/>
+  </button>
+  <div 
+    style={{
+      position: 'relative',
+      height: '100%',
+      display: 'flex',
+      width: '100%',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      padding: "0px"
+    }}
+  >
+    <button className='bg-black rounded-md sm:py-1 sm:px-1 text-gray-400' onClick={prevImage}>
+      <IoMdArrowDropleft size={30}/>
+    </button>
+    <img className='w-[280px] md:w-[550px]' src={images[selectedImageIndex]} alt='/'/>
+    <button className='bg-black rounded-md sm:py-1 sm:px-1 text-gray-400' onClick={nextImage}>
+      <IoMdArrowDropright size={30}/>
+    </button>
+  </div>
+            </Modal>
 
-                            </Zoom>
+
                         </div>
 
                         {/* الصور المصغرة */} 
@@ -108,59 +165,7 @@ const Silver = () => {
 
                     </div>
 
-                    {/* المنتج الثاني */} 
-                    <div className="flex flex-col md:flex-row gap-6 pb-12">
-                    <div className="md:w-1/2 relative ">
-                        {/* الصورة الرئيسية */}
-                        <div  className='w-[100%] overflow-hidden sm:h-[600px] justify-center flex items-center'>
-                            <img 
-                                    src={currentImage2} 
-                                    alt="Product 1" 
-                                    className="w-auto p-8 mx-auto object-cover rounded-lg z-50 relative" 
-                                    onMouseMove={handleMouseMove} 
-                                    onMouseEnter={handleMouseEnter} 
-                                    onMouseLeave={handleMouseLeave} 
-                                    ref={imageRef}
-                                    style={{
-                                        transform: `scale(${scale})`,
-                                        transformOrigin: `${position.x}% ${position.y}%`, 
-                                        transition: 'transform 0.2s ease', 
-                                    }}
-                            />
-                        </div>
 
-                        {/* الصور المصغرة */}
-                        <div className="absolute bottom-[-80px] sm:top-0 sm:start-[-100px] flex sm:flex-col gap-1 w-full">
-                            {[ProductImage2, Thumbnail1, Thumbnail2, Thumbnail3, Thumbnail4].map((thumb, index) => (
-                                <img 
-                                    key={index} 
-                                    src={thumb} 
-                                    alt={`Thumbnail ${index + 1}`} 
-                                    onClick={() => setCurrentImage2(thumb)} 
-                                    className={`cursor-pointer hover:scale-125 duration-200 border-2 rounded-md ${
-                                        currentImage2 === thumb 
-                                            ? 'border-main w-16 h-16 object-contain' 
-                                            : 'border-gray-300 w-16 h-16 object-cover'
-                                    }`}
-                                />
-                            ))}
-                        </div>
-                    </div>
-                    <div className="md:w-1/2 text-center sm:text-start sm:px-12 sm:mt-0 mt-20">
-                    {/* العنوان مع خط رمادي */}
-                    <h2 className="text-4xl font-bold text-main mb-4 hover:text-blue-500 duration-200 border-b-[1px] border-gray-300 pb-5">
-                        {t('Kiro Stainless steel')}
-                    </h2>
-
-                    {/* الفقرة مع خط رمادي */}
-                    <p className="text-gray-700 text-2xl border-b-[1px] border-gray-300 pb-5 mb-4">
-                        {t('info')}
-                    </p>
-                    <p className="text-gray-700 text-2xl border-b-[1px] border-gray-300 pb-5 mb-4">{t('Size')} 50x43x21{t('cm')}</p>
-                    <p className="text-gray-700 text-2xl border-b-[1px] border-gray-300 pb-5 mb-4">{t('Warranty: Lifetime')}</p>
-                    <p className="text-gray-700 text-2xl pb-5 mb-4">{t('Brand: Kiro Stainless steel')}</p>
-                    </div>
-                    </div>
                 </div>
             </div>
 
