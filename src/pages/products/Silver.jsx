@@ -115,7 +115,7 @@ const Silver = () => {
     <button className='bg-black rounded-md sm:py-1 sm:px-1 text-gray-400' onClick={prevImage}>
       <IoMdArrowDropleft size={30}/>
     </button>
-    <img className='w-[280px] md:w-[550px]' src={images[selectedImageIndex]} alt='/'/>
+    <img className='w-[280px] md:w-[800px] md:pb-20' src={images[selectedImageIndex]} alt='/'/>
     <button className='bg-black rounded-md sm:py-1 sm:px-1 text-gray-400' onClick={nextImage}>
       <IoMdArrowDropright size={30}/>
     </button>
