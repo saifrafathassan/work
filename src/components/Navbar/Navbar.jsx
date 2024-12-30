@@ -96,7 +96,7 @@ const scrollTo = () => {
     />
   </div>
   {isMobileDropdownOpen && (
-    <div className="mt-2 ml-4 space-y-2">
+    <div className="pt-2 ml-4 space-y-2">
       <Link to="/products" className="block text-gray-700 hover:text-main">
         {t('All Products')}
       </Link>
@@ -133,7 +133,7 @@ const scrollTo = () => {
 
 
       {/* desktop  */}
-      <header className="relative bg-main">
+      <header className="relative bg-main ">
         <nav aria-label="Top" className="px-4 sm:px-6 lg:px-8 shadow-xl pb-3" >
           <div>
             <div className="flex h-16 items-center">
@@ -168,14 +168,16 @@ const scrollTo = () => {
                     {t('About')}
                   </Link>
                   {/* قائمة المنتجات */}
-                  <div className="relative group">
+                  <div className="relative group ">
                     <Link to={'/products'}
                       aria-label="Products - Main Navigation"
                       className="text-md font-medium text-white duration-300 hover:scale-110"
                     >
                       {t('Products')}
                     </Link>
-                    <div className="absolute left-0 hidden z-10 group-hover:block bg-white shadow-lg rounded-md px-2 py-2">
+                    <div className="absolute left-0 z-10 hidden group-hover:block bg-transparent shadow-lg rounded-md py-2 pt-5">
+                      <div className="bg-white left-0 shadow-lg rounded-md px-2 py-2">
+
                       <Link
                         to="/products/silver"
                         className="block text-gray-700 hover:text-main px-2 py-1"
@@ -206,6 +208,7 @@ const scrollTo = () => {
                       >
                         {t('Diamond')}
                       </Link>
+                      </div>
                     </div>
                   </div>
                   <Link aria-label="Contact us - Main Navigation" to={'/contact'} className="text-md font-medium text-white duration-300 hover:scale-110" >

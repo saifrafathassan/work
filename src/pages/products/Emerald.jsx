@@ -3,8 +3,8 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
-import ProductImage1 from '../../assets/slide5.webp';
-import ProductImage2 from '../../assets/slide2.webp';
+import ProductImage1 from '../../assets/emraldnobg.png';
+import ProductImage2 from '../../assets/emraldnobg1.png';
 import Thumbnail1 from '../../assets/5.png'; // الصورة المصغرة الأولى
 import Thumbnail2 from '../../assets/6.png'; // الصورة المصغرة الثانية
 import Thumbnail3 from '../../assets/2.png'; // الصورة المصغرة الثالثة

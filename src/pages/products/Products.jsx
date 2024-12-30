@@ -3,16 +3,16 @@ import Headerps from '../../components/Header/Headerps';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Bg from '../../assets/background.jpg';
-import Slider1 from '../../assets/slide1.webp';
-import Slider2 from '../../assets/slide2.webp';
-import Slider3 from '../../assets/slide3.webp';
+import Slider1 from '../../assets/diamondnobg3.png';
+import Slider2 from '../../assets/emraldnobg1.png';
+import Slider3 from '../../assets/slivernobg2.png';
 import Slider4 from '../../assets/slide4.webp';
-import Slider5 from '../../assets/slide5.webp';
+import Slider5 from '../../assets/emraldnobg.png';
 import Slider6 from '../../assets/slide6.webp';
-import Slider7 from '../../assets/slide7.webp';
-import Slider8 from '../../assets/slide8.webp';
-import Slider9 from '../../assets/slide9.webp';
-import Slider10 from '../../assets/slide12.png';
+import Slider7 from '../../assets/clasicnobg.png';
+import Slider8 from '../../assets/platnobg.png';
+import Slider9 from '../../assets/platnobg1.png';
+import Slider10 from '../../assets/slivernobg3.png';
 import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
@@ -78,13 +78,13 @@ const Products = () => {
         {category.items.map((product, idx) => (
           <div
             key={idx}
-            className="flex  flex-col items-center  rounded-lg shadow-3xl py-8"
+            className="flex  flex-col items-center  rounded-lg shadow-3xl py-4"
           >
             {/* صورة المنتج */}
             <img
               src={product.image}
               alt={product.title}
-              className="w-[80%] h-full object-contain" // تكبير الصورة
+              className="w-[90%] h-full object-contain" // تكبير الصورة
             />
                   <div className="w-[100px] sm:w-[350px] h-1 bg-main mx-auto my-4"></div> {/* السطر تحت العنوان */}
             {/* تفاصيل المنتج */}
