@@ -5,10 +5,9 @@ import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
 import ProductImage1 from '../../assets/slide8.webp';
 import ProductImage2 from '../../assets/slide9.webp';
-import Thumbnail1 from '../../assets/6.png'; // الصورة المصغرة الأولى
+import Thumbnail1 from '../../assets/Accessories1.webp'; // الصورة المصغرة الأولى
 import Thumbnail2 from '../../assets/2.png'; // الصورة المصغرة الثانية
 import Thumbnail3 from '../../assets/wht.jpeg'; // الصورة المصغرة الثالثة
-import stage from '../../assets/stage.png'; // الصورة التي ستوضع تحت المنتج الأول
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import {FaTimes} from 'react-icons/fa'

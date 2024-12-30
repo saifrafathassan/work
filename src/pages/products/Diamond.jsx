@@ -8,7 +8,6 @@ import ProductImage2 from '../../assets/slide4.webp';
 import Thumbnail1 from '../../assets/wht.jpeg'; // الصورة المصغرة الأولى
 import Thumbnail2 from '../../assets/6.png'; // الصورة المصغرة الثانية
 import Thumbnail3 from '../../assets/2.png'; // الصورة المصغرة الثالثة
-import stage from '../../assets/stage.png'; // الصورة التي ستوضع تحت المنتج الأول
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import {FaTimes} from 'react-icons/fa'

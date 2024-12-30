@@ -9,7 +9,6 @@ import Thumbnail1 from '../../assets/04.png'; // الصورة المصغرة ا�
 import Thumbnail2 from '../../assets/03.png'; // الصورة المصغرة الثانية
 import Thumbnail3 from '../../assets/01.png'; // الصورة المصغرة الثالثة
 import Thumbnail4 from '../../assets/wht.jpeg'; // الصورة المصغرة الثالثة
-import stage from '../../assets/stage.png'; // الصورة التي ستوضع تحت المنتج الأول
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import {FaTimes} from 'react-icons/fa'
