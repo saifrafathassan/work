@@ -6,15 +6,14 @@ import Back from '../../assets/background.jpg';
 import ProductImage1 from '../../assets/slide6.webp';
 import ProductImage2 from '../../assets/clasicnobg.png';
 import Thumbnail3 from '../../assets/2.png'; // الصورة المصغرة الثالثة
-import Thumbnail2 from '../../assets/wht.jpeg'; // الصورة المصغرة الثالثة
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import {FaTimes} from 'react-icons/fa'
 import {IoMdArrowDropleft, IoMdArrowDropright} from 'react-icons/io'
 import Modal from 'react-modal';
 
-const images = [ProductImage1,  Thumbnail2, Thumbnail3];
-const images1 = [ProductImage2,  Thumbnail2, Thumbnail3];
+const images = [ProductImage1,  Thumbnail3];
+const images1 = [ProductImage2,  Thumbnail3];
 
 const Classic = () => {
     const { t } = useTranslation();
@@ -147,7 +146,7 @@ const Classic = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage1,  Thumbnail3, Thumbnail2].map((thumb, index) => (
+                            {[ProductImage1,  Thumbnail3].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 
@@ -256,7 +255,7 @@ const Classic = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage2, Thumbnail3, Thumbnail2].map((thumb, index) => (
+                            {[ProductImage2, Thumbnail3].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 
