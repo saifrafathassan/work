@@ -167,10 +167,11 @@ const Diamond = () => {
 
 
 
+
                     <div className="md:w-1/2 text-center sm:text-start sm:px-12 sm:mt-0 mt-20">
                     {/* العنوان مع خط رمادي */}
                     <h2 className="text-3xl font-bold text-main mb-4 hover:text-blue-500 duration-200 border-b-[1px] border-gray-300 pb-5">
-                        {t('Kiro Stainless steel')} 72x45x23{t('cm')}
+                        {t('Kiro Stainless steel')} 72x45{t('cm')}
                     </h2>
 
                     {/* الفقرة مع خط رمادي */}
@@ -178,11 +179,11 @@ const Diamond = () => {
                         {t('info')}
                     </p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Size')}</span>  72x45x23{t('cm')}</p>
-                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Warranty')}</span> {t('Lifetime')}</p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('color')}</span> {t('gray')}</p>
-                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Materials')}</span> {t('stainless steel high-quality')}</p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Exchangetype')}</span> {t('network')}</p>
-                    <p className="text-gray-700 text-xl pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Item shape')}</span> {t('rectangular')}</p>
+                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Drainer size:')}</span>  110{t('mm')}</p>
+                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Materials')}</span> {t('stainless steel high-quality')}</p>
+                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Warranty')}</span> {t('Lifetime')}</p>
                     </div>
 
                     </div>
@@ -279,7 +280,7 @@ const Diamond = () => {
                     <div className="md:w-1/2 text-center sm:text-start sm:px-12 sm:mt-0 mt-20">
                     {/* العنوان مع خط رمادي */}
                     <h2 className="text-3xl font-bold text-main mb-4 hover:text-blue-500 duration-200 border-b-[1px] border-gray-300 pb-5">
-                        {t('Kiro Stainless steel')} 88x50x23{t('cm')}
+                        {t('Kiro Stainless steel')} 88x50{t('cm')}
                     </h2>
 
                     {/* الفقرة مع خط رمادي */}
@@ -287,11 +288,11 @@ const Diamond = () => {
                         {t('info')}
                     </p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Size')}</span>  88x50x23{t('cm')}</p>
-                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Warranty')}</span> {t('Lifetime')}</p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('color')}</span> {t('gray')}</p>
-                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Materials')}</span> {t('stainless steel high-quality')}</p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Exchangetype')}</span> {t('network')}</p>
-                    <p className="text-gray-700 text-xl pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Item shape')}</span> {t('rectangular')}</p>
+                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Drainer size:')}</span>  110{t('mm')}</p>
+                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Materials')}</span> {t('stainless steel high-quality')}</p>
+                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Warranty')}</span> {t('Lifetime')}</p>
                     </div>
 
                     </div>
