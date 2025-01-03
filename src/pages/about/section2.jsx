@@ -36,7 +36,7 @@ const Section2 = ({t}) => {
   };
 
   return (
-    <div className="h-full w-full md:py-12 py-5 flex justify-center">
+    <div className="h-full w-full md:py-12 pb-10 flex justify-center">
       <div className="w-full text-center">
         {/* العنوان والسطر */}
         <div className="my-10 ">

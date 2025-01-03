@@ -145,7 +145,7 @@ const Classic = () => {
                         </div>
 
                         {/* الصور المصغرة */} 
-                        <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
+                        <div className="absolute bottom-[-80px] sm:top-24 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
                             {[ProductImage1,  Thumbnail3].map((thumb, index) => (
                                 <img 
                                     key={index} 
@@ -166,12 +166,12 @@ const Classic = () => {
 
                     <div className="md:w-1/2 text-center sm:text-start sm:px-12 sm:mt-0 mt-20">
                     {/* العنوان مع خط رمادي */}
-                    <h2 className="text-3xl font-bold text-main mb-4 hover:text-blue-500 duration-200 border-b-[1px] border-gray-300 pb-5">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-main mb-4 hover:text-blue-500 duration-200 border-b-[1px] border-gray-300 pb-5">
                         {t('Kiro Stainless steel')} 120x50{t('cm')}
                     </h2>
 
                     {/* الفقرة مع خط رمادي */}
-                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4">
+                    <p className="text-gray-700 text-lg sm:text-xl border-b-[1px] border-gray-300 pb-5 mb-4">
                         {t('info')}
                     </p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Size')}</span>  120x50x21{t('cm')}</p>
@@ -254,7 +254,7 @@ const Classic = () => {
                         </div>
 
                         {/* الصور المصغرة */} 
-                        <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
+                        <div className="absolute bottom-[-80px] sm:top-24 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
                             {[ProductImage2, Thumbnail3].map((thumb, index) => (
                                 <img 
                                     key={index} 
@@ -275,12 +275,12 @@ const Classic = () => {
 
                     <div className="md:w-1/2 text-center sm:text-start sm:px-12 sm:mt-0 mt-20">
                     {/* العنوان مع خط رمادي */}
-                    <h2 className="text-3xl font-bold text-main mb-4 hover:text-blue-500 duration-200 border-b-[1px] border-gray-300 pb-5">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-main mb-4 hover:text-blue-500 duration-200 border-b-[1px] border-gray-300 pb-5">
                         {t('Kiro Stainless steel')} 100x50{t('cm')}
                     </h2>
 
                     {/* الفقرة مع خط رمادي */}
-                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4">
+                    <p className="text-gray-700 text-lg sm:text-xl border-b-[1px] border-gray-300 pb-5 mb-4">
                         {t('info')}
                     </p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Size')}</span>  100x50x21{t('cm')}</p>

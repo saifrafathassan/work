@@ -16,13 +16,13 @@
 
 .slick-dots li button:before {
     color: #1A2666;
-    font-size: 16px; 
+    font-size: 14px; 
 }
 
 /* النقطة النشطة */
 .slick-dots li.slick-active button:before {
     color: #1A2666;
-    font-size: 18px; 
+    font-size: 14px; 
 }
 
 
