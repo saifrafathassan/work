@@ -87,7 +87,7 @@ const Emerald = () => {
                                 onClick={() => openModalProduct1(images.indexOf(currentImage))}
                                 src={currentImage} 
                                 alt="Product 1" 
-                                className="w-[350px] h-[250px] sm:h-full sm:w-auto p-8 mx-auto object-cover rounded-lg z-50 relative cursor-pointer" 
+                                className="w-[350px] h-[250px] sm:h-auto sm:w-auto p-8 mx-auto object-cover rounded-lg z-50 relative cursor-pointer" 
                             />
             <Modal
         isOpen={modalIsOpenProduct1} 
@@ -196,7 +196,7 @@ const Emerald = () => {
                                 onClick={() => openModalProduct2(images1.indexOf(currentImage1))}
                                 src={currentImage1} 
                                 alt="Product 1" 
-                                className="w-[380px] h-[250px] sm:h-full sm:w-auto p-8 mx-auto object-cover rounded-lg z-50 relative cursor-pointer" 
+                                className="w-[380px] h-[250px] sm:h-auto sm:w-auto p-8 mx-auto object-cover rounded-lg z-50 relative cursor-pointer" 
                             />
             <Modal
         isOpen={modalIsOpenProduct2} 
