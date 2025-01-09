@@ -5,7 +5,7 @@ import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
 import ProductImage1 from '../../assets/diamondnobg3.png';
 import ProductImage2 from '../../assets/slide4.webp';
-import Thumbnail2 from '../../assets/6.png'; // الصورة المصغرة الثانية
+import Thumbnail2 from '../../assets/Acs3.jpg'; // الصورة المصغرة الثانية
 import Thumbnail3 from '../../assets/2.png'; // الصورة المصغرة الثالثة
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';

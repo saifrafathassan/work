@@ -5,16 +5,15 @@ import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
 import ProductImage1 from '../../assets/platnobg.png';
 import ProductImage2 from '../../assets/platnobg1.png';
-import Thumbnail1 from '../../assets/Accessories1.webp'; // الصورة المصغرة الأولى
-import Thumbnail2 from '../../assets/2.png'; // الصورة المصغرة الثانية
+import Thumbnail1 from '../../assets/Acs1.jpg'; // الصورة المصغرة الأولى
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import {FaTimes} from 'react-icons/fa'
 import {IoMdArrowDropleft, IoMdArrowDropright} from 'react-icons/io'
 import Modal from 'react-modal';
 
-const images = [ProductImage1, Thumbnail1, Thumbnail2];
-const images1 = [ProductImage2, Thumbnail1, Thumbnail2];
+const images = [ProductImage1, Thumbnail1];
+const images1 = [ProductImage2, Thumbnail1];
 
 const Platinum = () => {
     const { t } = useTranslation();
@@ -147,7 +146,7 @@ const Platinum = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-20 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage1, Thumbnail1, Thumbnail2].map((thumb, index) => (
+                            {[ProductImage1, Thumbnail1].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 
@@ -256,7 +255,7 @@ const Platinum = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-20 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage2, Thumbnail1, Thumbnail2].map((thumb, index) => (
+                            {[ProductImage2, Thumbnail1].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 

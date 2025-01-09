@@ -5,17 +5,15 @@ import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
 import ProductImage1 from '../../assets/slivernobg3.png';
 import ProductImage2 from '../../assets/slivernobg2.png';
-import Thumbnail1 from '../../assets/04.png'; // الصورة المصغرة الأولى
-import Thumbnail2 from '../../assets/03.png'; // الصورة المصغرة الثانية
-import Thumbnail3 from '../../assets/01.png'; // الصورة المصغرة الثالثة
+import Thumbnail3 from '../../assets/Acs2.jpg'; // الصورة المصغرة الثانية
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import {FaTimes} from 'react-icons/fa'
 import {IoMdArrowDropleft, IoMdArrowDropright} from 'react-icons/io'
 import Modal from 'react-modal';
 
-const images = [ProductImage1, Thumbnail1, Thumbnail2, Thumbnail3];
-const images1 = [ProductImage2, Thumbnail1, Thumbnail2, Thumbnail3];
+const images = [ProductImage1, Thumbnail3];
+const images1 = [ProductImage2, Thumbnail3];
 
 const Silver = () => {
     const { t } = useTranslation();
@@ -148,7 +146,7 @@ const Silver = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage1, Thumbnail1, Thumbnail2, Thumbnail3].map((thumb, index) => (
+                            {[ProductImage1, Thumbnail3].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 
@@ -257,7 +255,7 @@ const Silver = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage2, Thumbnail1, Thumbnail2, Thumbnail3].map((thumb, index) => (
+                            {[ProductImage2, Thumbnail3].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 
