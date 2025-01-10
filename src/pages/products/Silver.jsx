@@ -3,8 +3,8 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
-import ProductImage1 from '../../assets/slivernobg3.png';
-import ProductImage2 from '../../assets/slivernobg2.png';
+import ProductImage1 from '../../assets/slivers.png';
+import ProductImage2 from '../../assets/sliver.png';
 import Thumbnail3 from '../../assets/Acs2.jpg'; // الصورة المصغرة الثانية
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';

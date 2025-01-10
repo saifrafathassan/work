@@ -1,11 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react';
 import Slider from 'react-slick';
-import Slider1 from '../../../assets/diamondnobg3.png';
-import Slider2 from '../../../assets/slivernobg3.png';
-import Slider10 from '../../../assets/slivernobg2.png';
-import Slider3 from '../../../assets/emraldnobg1.png';
-import Slider4 from '../../../assets/slide4.webp';
-import Slider5 from '../../../assets/emraldnobg.png';
+import Slider1 from '../../../assets/diamondbrowne.png';
+import Slider2 from '../../../assets/sliver.png';
+import Slider10 from '../../../assets/slivers.png';
+import Slider3 from '../../../assets/emrald1.png';
+import Slider4 from '../../../assets/diamond.png';
+import Slider5 from '../../../assets/emrald.png';
 import Slider6 from '../../../assets/slide6.webp';
 import Slider7 from '../../../assets/clasicnobg.png';
 import Slider8 from '../../../assets/platnobg.png';
