@@ -5,6 +5,9 @@ import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
 import ProductImage1 from '../../assets/slivers.png';
 import ProductImage2 from '../../assets/sliver.png';
+import ProductImage3 from '../../assets/sliver2.webp';
+import ProductImage4 from '../../assets/sliver3.webp';
+import ProductImage5 from '../../assets/sliver4.webp';
 import Thumbnail3 from '../../assets/Acs2.jpg'; // الصورة المصغرة الثانية
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
@@ -12,8 +15,8 @@ import {FaTimes} from 'react-icons/fa'
 import {IoMdArrowDropleft, IoMdArrowDropright} from 'react-icons/io'
 import Modal from 'react-modal';
 
-const images = [ProductImage1, Thumbnail3];
-const images1 = [ProductImage2, Thumbnail3];
+const images = [ProductImage1, ProductImage3, ProductImage4, ProductImage5, Thumbnail3];
+const images1 = [ProductImage2, ProductImage3, ProductImage4, ProductImage5, Thumbnail3];
 
 const Silver = () => {
     const { t } = useTranslation();
@@ -146,7 +149,7 @@ const Silver = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage1, Thumbnail3].map((thumb, index) => (
+                            {[ProductImage1, ProductImage3, ProductImage4, ProductImage5, Thumbnail3].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 
@@ -255,7 +258,7 @@ const Silver = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage2, Thumbnail3].map((thumb, index) => (
+                            {[ProductImage2, ProductImage3, ProductImage4, ProductImage5, Thumbnail3].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 

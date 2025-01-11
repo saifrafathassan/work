@@ -5,6 +5,10 @@ import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
 import ProductImage1 from '../../assets/diamondbrowne1.png';
 import ProductImage2 from '../../assets/diamond.png';
+import ProductImage3 from '../../assets/diamond.webp';
+import ProductImage4 from '../../assets/diamond2.webp';
+import ProductImage5 from '../../assets/diamond5.webp';
+import ProductImage6 from '../../assets/diamond7.webp';
 import Thumbnail2 from '../../assets/Acs3.jpg'; // الصورة المصغرة الثانية
 import Thumbnail3 from '../../assets/2.png'; // الصورة المصغرة الثالثة
 import { useTranslation } from 'react-i18next';
@@ -13,8 +17,8 @@ import {FaTimes} from 'react-icons/fa'
 import {IoMdArrowDropleft, IoMdArrowDropright} from 'react-icons/io'
 import Modal from 'react-modal';
 
-const images = [ProductImage1,  Thumbnail2, Thumbnail3];
-const images1 = [ProductImage2,  Thumbnail2, Thumbnail3];
+const images = [ProductImage1,ProductImage3, ProductImage4, ProductImage5,  Thumbnail2, Thumbnail3];
+const images1 = [ProductImage2, ProductImage6, Thumbnail2, Thumbnail3];
 
 const Diamond = () => {
     const { t } = useTranslation();
@@ -147,7 +151,7 @@ const Diamond = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-24 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage1, Thumbnail2, Thumbnail3].map((thumb, index) => (
+                            {[ProductImage1, ProductImage3, ProductImage4, ProductImage5, Thumbnail2, Thumbnail3].map((thumb, index) => (
                                 <img 
                                     
                                     key={index} 
@@ -258,7 +262,7 @@ const Diamond = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-24 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage2, Thumbnail2, Thumbnail3].map((thumb, index) => (
+                            {[ProductImage2, ProductImage6, Thumbnail2, Thumbnail3].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 

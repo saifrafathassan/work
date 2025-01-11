@@ -4,8 +4,8 @@ import Footer from '../../components/Footer/Footer';
 import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
 import ProductImage1 from '../../assets/emrald.png';
-import ProductImage3 from '../../assets/emrald.png';
-import ProductImage4 from '../../assets/emrald.png';
+import ProductImage3 from '../../assets/emrald2.webp';
+import ProductImage4 from '../../assets/emrald7.webp';
 import ProductImage2 from '../../assets/emrald1.png';
 import Thumbnail1 from '../../assets/5.png'; // الصورة المصغرة الأولى
 import Thumbnail2 from '../../assets/Acs3.jpg'; // الصورة المصغرة الثانية
@@ -16,8 +16,8 @@ import {FaTimes} from 'react-icons/fa'
 import {IoMdArrowDropleft, IoMdArrowDropright} from 'react-icons/io'
 import Modal from 'react-modal';
 
-const images = [ProductImage1, ProductImage3, ProductImage4, Thumbnail2, Thumbnail3];
-const images1 = [ProductImage2, Thumbnail1, Thumbnail2, Thumbnail3];
+const images = [ProductImage1, ProductImage3, Thumbnail2, Thumbnail3];
+const images1 = [ProductImage2, ProductImage4, Thumbnail1, Thumbnail2, Thumbnail3];
 
 const Emerald = () => {
     const { t } = useTranslation();
@@ -150,7 +150,7 @@ const Emerald = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-20 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage1, ProductImage3, ProductImage4, Thumbnail2, Thumbnail3].map((thumb, index) => (
+                            {[ProductImage1, ProductImage3, Thumbnail2, Thumbnail3].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 
@@ -259,7 +259,7 @@ const Emerald = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-20 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage2, Thumbnail1, Thumbnail2, Thumbnail3].map((thumb, index) => (
+                            {[ProductImage2, ProductImage4, Thumbnail1, Thumbnail2, Thumbnail3].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 
