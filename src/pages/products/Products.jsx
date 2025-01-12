@@ -82,6 +82,7 @@ const Products = () => {
           >
             {/* صورة المنتج */}
             <img
+              loading='lazy'
               src={product.image}
               alt={product.title}
               className="w-[90%] h-full object-contain" // تكبير الصورة
