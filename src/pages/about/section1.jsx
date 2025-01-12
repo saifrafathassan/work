@@ -1,7 +1,7 @@
 import { withTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import { motion } from 'framer-motion';
-import factoryimg from '../../assets/factory7.jpg';
+import factoryimg from '../../assets/factory7.webp';
 
 const Section1 = ({ t }) => {
   const currentLanguage = i18n.language || i18n.options.fallbackLng[0];

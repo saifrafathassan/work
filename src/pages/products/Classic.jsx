@@ -4,7 +4,7 @@ import Footer from '../../components/Footer/Footer';
 import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.jpg';
 import ProductImage1 from '../../assets/slide6.webp';
-import ProductImage2 from '../../assets/clasic.png';
+import ProductImage2 from '../../assets/clasic.webp';
 import Thumbnail3 from '../../assets/2.png'; // الصورة المصغرة الثالثة
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
