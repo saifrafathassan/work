@@ -82,6 +82,7 @@ const Platinum = () => {
                         <div className='w-full sm:h-[500px] justify-center mx-auto flex items-center'>
 
                             <img 
+                                          loading='lazy'
                                 onClick={() => openModalProduct1(images.indexOf(currentImage))}
                                 src={currentImage} 
                                 alt="Product 1" 
@@ -148,6 +149,7 @@ const Platinum = () => {
                         <div className="absolute bottom-[-80px] sm:top-20 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
                             {[ProductImage1, Thumbnail1].map((thumb, index) => (
                                 <img 
+                                              loading='lazy'
                                     key={index} 
                                     src={thumb} 
                                     alt={`Thumbnail ${index + 1}`} 
@@ -191,6 +193,7 @@ const Platinum = () => {
                         <div className='w-full sm:h-[500px] justify-center mx-auto flex items-center'>
 
                             <img 
+                                          loading='lazy'
                                 onClick={() => openModalProduct2(images1.indexOf(currentImage1))}
                                 src={currentImage1} 
                                 alt="Product 1" 
@@ -257,6 +260,7 @@ const Platinum = () => {
                         <div className="absolute bottom-[-80px] sm:top-20 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
                             {[ProductImage2, Thumbnail1].map((thumb, index) => (
                                 <img 
+                                              loading='lazy'
                                     key={index} 
                                     src={thumb} 
                                     alt={`Thumbnail ${index + 1}`} 
