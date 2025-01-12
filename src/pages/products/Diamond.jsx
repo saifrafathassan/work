@@ -9,7 +9,7 @@ import ProductImage3 from '../../assets/diamond.webp';
 import ProductImage4 from '../../assets/diamond2.webp';
 import ProductImage5 from '../../assets/diamond5.webp';
 import ProductImage6 from '../../assets/diamond7.webp';
-import Thumbnail2 from '../../assets/Acs3.jpg'; // الصورة المصغرة الثانية
+import Thumbnail2 from '../../assets/Acs3.webp'; // الصورة المصغرة الثانية
 import Thumbnail3 from '../../assets/2.png'; // الصورة المصغرة الثالثة
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';

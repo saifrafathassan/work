@@ -8,7 +8,7 @@ import ProductImage2 from '../../assets/sliver.webp';
 import ProductImage3 from '../../assets/sliver2.webp';
 import ProductImage4 from '../../assets/sliver3.webp';
 import ProductImage5 from '../../assets/sliver4.webp';
-import Thumbnail3 from '../../assets/Acs2.jpg'; // الصورة المصغرة الثانية
+import Thumbnail3 from '../../assets/Acs2.webp'; // الصورة المصغرة الثانية
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import {FaTimes} from 'react-icons/fa'
@@ -89,7 +89,6 @@ const Silver = () => {
                                 src={currentImage} 
                                 alt="Product 1" 
                                 className="w-[400px] h-[300px] sm:h-full sm:w-auto p-8 mx-auto object-cover rounded-lg z-50 relative cursor-pointer" 
-                                loading='lazy'
                             />
             <Modal
         isOpen={modalIsOpenProduct1} 
@@ -153,7 +152,6 @@ const Silver = () => {
                             {[ProductImage1, ProductImage3, ProductImage4, ProductImage5, Thumbnail3].map((thumb, index) => (
                                 <img 
                                     key={index} 
-                                    loading='lazy'
                                     src={thumb} 
                                     alt={`Thumbnail ${index + 1}`} 
                                     onClick={() => setCurrentImage(thumb)} 
@@ -196,7 +194,6 @@ const Silver = () => {
                         <div className='w-full sm:h-[500px] justify-center mx-auto flex items-center'>
 
                             <img 
-                                          loading='lazy'
                                 onClick={() => openModalProduct2(images1.indexOf(currentImage1))}
                                 src={currentImage1} 
                                 alt="Product 1" 
@@ -263,7 +260,6 @@ const Silver = () => {
                         <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
                             {[ProductImage2, ProductImage3, ProductImage4, ProductImage5, Thumbnail3].map((thumb, index) => (
                                 <img 
-                                              loading='lazy'
                                     key={index} 
                                     src={thumb} 
                                     alt={`Thumbnail ${index + 1}`} 
