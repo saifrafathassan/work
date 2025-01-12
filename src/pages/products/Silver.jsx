@@ -197,7 +197,7 @@ const Silver = () => {
                                 onClick={() => openModalProduct2(images1.indexOf(currentImage1))}
                                 src={currentImage1} 
                                 alt="Product 1" 
-                                className="w-[400px] h-[400px] sm:h-full sm:w-auto p-8 mx-auto object-cover rounded-lg z-50 relative cursor-pointer" 
+                                className="w-[550px] h-[320px] sm:h-full sm:w-auto p-5 mx-auto object-cover rounded-lg z-50 relative cursor-pointer" 
                             />
             <Modal
         isOpen={modalIsOpenProduct2} 
