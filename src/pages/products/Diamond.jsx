@@ -191,6 +191,8 @@ const Diamond = () => {
                     <h3 className='text-gray-700 text-lg sm:text-2xl mt-12 border-b-[1px] border-gray-300 pb-5 mb-4'>{t('Features')}</h3>
                     <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features1')}</p>
                     <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features2')}</p>
+                    <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features3')}</p>
+                    <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features4')}</p>
                     </div>
 
                     </div>
@@ -304,6 +306,8 @@ const Diamond = () => {
                     <h3 className='text-gray-700 text-lg sm:text-2xl mt-12 border-b-[1px] border-gray-300 pb-5 mb-4'>{t('Features')}</h3>
                     <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features1')}</p>
                     <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features2')}</p>
+                    <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features3')}</p>
+                    <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features4')}</p>
                     </div>
 
                     </div>
