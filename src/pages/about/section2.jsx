@@ -3,13 +3,13 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { withTranslation } from 'react-i18next';
-import img1 from '../../assets/1.webp';
-import img2 from '../../assets/2.webp';
-import img3 from '../../assets/3.webp';
-import img4 from '../../assets/5.webp';
-import img5 from '../../assets/4.webp';
-import img6 from '../../assets/7.webp';
-import img7 from '../../assets/8.webp';
+import img1 from '../../assets/a1.webp';
+import img2 from '../../assets/a2.webp';
+import img3 from '../../assets/a3.webp';
+import img4 from '../../assets/a5.webp';
+import img5 from '../../assets/a4.webp';
+import img6 from '../../assets/a7.webp';
+import img7 from '../../assets/a8.webp';
 
 const Section2 = ({t}) => {
   const settings = {

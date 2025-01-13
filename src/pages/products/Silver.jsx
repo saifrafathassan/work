@@ -9,14 +9,15 @@ import ProductImage3 from '../../assets/sliver2.webp';
 import ProductImage4 from '../../assets/sliver3.webp';
 import ProductImage5 from '../../assets/sliver4.webp';
 import Thumbnail3 from '../../assets/Acs2.webp'; // الصورة المصغرة الثانية
+import Thumbnail4 from '../../assets/safaia.jpg'; // الصورة المصغرة الثانية
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import {FaTimes} from 'react-icons/fa'
 import {IoMdArrowDropleft, IoMdArrowDropright} from 'react-icons/io'
 import Modal from 'react-modal';
 
-const images = [ProductImage1, ProductImage3, ProductImage4, ProductImage5, Thumbnail3];
-const images1 = [ProductImage2, ProductImage3, ProductImage4, ProductImage5, Thumbnail3];
+const images = [ProductImage1, ProductImage3, ProductImage4, ProductImage5, Thumbnail3, Thumbnail4];
+const images1 = [ProductImage2, ProductImage3, ProductImage4, ProductImage5, Thumbnail3, Thumbnail4];
 
 const Silver = () => {
     const { t } = useTranslation();
@@ -88,7 +89,7 @@ const Silver = () => {
                                 onClick={() => openModalProduct1(images.indexOf(currentImage))}
                                 src={currentImage} 
                                 alt="Product 1" 
-                                className="w-full h-[300px] sm:h-auto sm:w-auto p-8 mx-auto object-contain sm:object-cover rounded-lg z-50 relative cursor-pointer" 
+                                className="w-full lg:pt-36 h-[300px] sm:h-auto sm:w-auto p-8 mx-auto object-contain sm:object-cover rounded-lg z-50 relative cursor-pointer" 
                             />
             <Modal
         isOpen={modalIsOpenProduct1} 
@@ -149,7 +150,7 @@ const Silver = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage1, ProductImage3, ProductImage4, ProductImage5, Thumbnail3].map((thumb, index) => (
+                            {[ProductImage1, ProductImage3, ProductImage4, ProductImage5, Thumbnail3, Thumbnail4].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 
@@ -197,7 +198,7 @@ const Silver = () => {
                                 onClick={() => openModalProduct2(images1.indexOf(currentImage1))}
                                 src={currentImage1} 
                                 alt="Product 1" 
-                                className="w-full h-[300px] sm:h-auto sm:w-auto p-8 mx-auto object-contain sm:object-cover rounded-lg z-50 relative cursor-pointer" 
+                                className="w-full h-[300px] lg:pt-36 sm:h-auto sm:w-auto p-8 mx-auto object-contain sm:object-cover rounded-lg z-50 relative cursor-pointer" 
                             />
             <Modal
         isOpen={modalIsOpenProduct2} 
@@ -258,7 +259,7 @@ const Silver = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage2, ProductImage3, ProductImage4, ProductImage5, Thumbnail3].map((thumb, index) => (
+                            {[ProductImage2, ProductImage3, ProductImage4, ProductImage5, Thumbnail3, Thumbnail4].map((thumb, index) => (
                                 <img 
                                     key={index} 
                                     src={thumb} 
