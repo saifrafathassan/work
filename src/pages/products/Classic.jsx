@@ -180,6 +180,9 @@ const Classic = () => {
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Drainer size:')}</span>  110{t('mm')}</p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Materials')}</span> {t('stainless steel high-quality')}</p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Warranty')}</span> {t('Lifetime')}</p>
+                    <h3 className='text-gray-700 text-lg sm:text-2xl mt-12 border-b-[1px] border-gray-300 pb-5 mb-4'>{t('Features')}</h3>
+                    <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features1')}</p>
+                    <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features2')}</p>
                     </div>
 
                     </div>
@@ -289,6 +292,9 @@ const Classic = () => {
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Drainer size:')}</span>  110{t('mm')}</p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Materials')}</span> {t('stainless steel high-quality')}</p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Warranty')}</span> {t('Lifetime')}</p>
+                    <h3 className='text-gray-700 text-lg sm:text-2xl mt-12 border-b-[1px] border-gray-300 pb-5 mb-4'>{t('Features')}</h3>
+                    <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features1')}</p>
+                    <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features2')}</p>
                     </div>
 
                     </div>
