@@ -2,7 +2,7 @@ import React from 'react';
 import Headerps from '../../components/Header/Headerps';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import Bg from '../../assets/background.jpg';
+import Bg from '../../assets/background.webp';
 import Slider1 from '../../assets/diamondbrowne1.webp';
 import Slider2 from '../../assets/emrald1.webp';
 import Slider3 from '../../assets/sliver.webp';

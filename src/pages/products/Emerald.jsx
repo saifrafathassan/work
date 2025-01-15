@@ -2,7 +2,7 @@ import React, { useState, useRef  } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Headerps from '../../components/Header/Headerps';
-import Back from '../../assets/background.jpg';
+import Back from '../../assets/background.webp';
 import ProductImage1 from '../../assets/emrald.webp';
 import ProductImage3 from '../../assets/emrald2.webp';
 import ProductImage4 from '../../assets/emrald7.webp';

@@ -2,14 +2,14 @@ import React, { useState, useRef  } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Headerps from '../../components/Header/Headerps';
-import Back from '../../assets/background.jpg';
+import Back from '../../assets/background.webp';
 import ProductImage1 from '../../assets/slivers.webp';
 import ProductImage2 from '../../assets/sliver.webp';
 import ProductImage3 from '../../assets/sliver2.webp';
 import ProductImage4 from '../../assets/sliver3.webp';
 import ProductImage5 from '../../assets/sliver4.webp';
 import Thumbnail3 from '../../assets/Acs2.webp'; // الصورة المصغرة الثانية
-import Thumbnail4 from '../../assets/safaia.jpg'; // الصورة المصغرة الثانية
+import Thumbnail4 from '../../assets/safaia.webp'; // الصورة المصغرة الثانية
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import {FaTimes} from 'react-icons/fa'

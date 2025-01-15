@@ -2,12 +2,12 @@ import React, { useState, useRef  } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Headerps from '../../components/Header/Headerps';
-import Back from '../../assets/background.jpg';
+import Back from '../../assets/background.webp';
 import ProductImage1 from '../../assets/plat.webp';
 import ProductImage2 from '../../assets/plat1.webp';
 import Thumbnail1 from '../../assets/Acs1.webp'; 
 import Thumbnail2 from '../../assets/6.png'; 
-import Thumbnail4 from '../../assets/safaia.jpg'; // الصورة المصغرة الثانية
+import Thumbnail4 from '../../assets/safaia.webp'; // الصورة المصغرة الثانية
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import {FaTimes} from 'react-icons/fa'

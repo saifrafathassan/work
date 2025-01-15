@@ -4,7 +4,7 @@ import Headerps from '../../components/Header/Headerps'
 import Section1 from './section1'
 import Section2 from './section2'
 import Section3 from './section3'
-import Bg from '../../assets/background.jpg'
+import Bg from '../../assets/background.webp'
 import { useTranslation } from 'react-i18next';
 
 const About = () => {

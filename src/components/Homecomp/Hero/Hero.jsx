@@ -10,7 +10,7 @@ import Slider6 from '../../../assets/slide6.webp';
 import Slider7 from '../../../assets/clasic.webp';
 import Slider8 from '../../../assets/plat.webp';
 import Slider9 from '../../../assets/plat1.webp';
-import background from '../../../assets/background.jpg';
+import background from '../../../assets/background.webp';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
