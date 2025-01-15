@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import VideoSrc from '../../../assets/Final Edit.mp4';
 import { withTranslation } from 'react-i18next';
 import i18n from 'i18next';
 
@@ -36,7 +35,7 @@ const Content = ({ t }) => {
       {/* الفيديو */}
       <div className="w-screen md:w-2/3 lg:w-2/2 px-4">
         <video
-          src={VideoSrc}
+          src="/FinalEdit.mp4"
           autoPlay
           loop
           muted
