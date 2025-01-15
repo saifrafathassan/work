@@ -86,6 +86,7 @@ const Silver = () => {
                         <div className='w-full sm:h-[500px] justify-center mx-auto flex items-center'>
 
                             <img 
+                            loading="lazy"
                                 onClick={() => openModalProduct1(images.indexOf(currentImage))}
                                 src={currentImage} 
                                 alt="Product 1" 
@@ -152,6 +153,7 @@ const Silver = () => {
                         <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
                             {[ProductImage1, ProductImage3, ProductImage4, ProductImage5, Thumbnail3, Thumbnail4].map((thumb, index) => (
                                 <img 
+                                loading="lazy"
                                     key={index} 
                                     src={thumb} 
                                     alt={`Thumbnail ${index + 1}`} 
@@ -204,6 +206,7 @@ const Silver = () => {
                                 src={currentImage1} 
                                 alt="Product 1" 
                                 className="w-full h-[300px] lg:pt-36 sm:h-auto sm:w-auto p-8 mx-auto object-contain sm:object-cover rounded-lg z-50 relative cursor-pointer" 
+                                loading="lazy"
                             />
             <Modal
         isOpen={modalIsOpenProduct2} 
@@ -266,6 +269,7 @@ const Silver = () => {
                         <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
                             {[ProductImage2, ProductImage3, ProductImage4, ProductImage5, Thumbnail3, Thumbnail4].map((thumb, index) => (
                                 <img 
+                                loading="lazy"
                                     key={index} 
                                     src={thumb} 
                                     alt={`Thumbnail ${index + 1}`} 
