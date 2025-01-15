@@ -89,7 +89,7 @@ const HeroSection = ({ t }) => {
       {/* الصورة الكبيرة */}
       <img
         className='w-[70%] h-[300px] sm:w-[70%] sm:h-[500px] object-contain mx-auto cursor-pointer'
-        
+        loading={index === 0 ? 'eager' : 'lazy'} // تحميل الصورة الأولى بشكل فوري، والباقي بشكل كسول
         src={slide.image}
         alt={`heroimg${index}`}
         onClick={() => navigate(slide.link)}
