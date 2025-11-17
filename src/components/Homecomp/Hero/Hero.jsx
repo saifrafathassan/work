@@ -10,6 +10,8 @@ import Slider6 from '../../../assets/slide6.webp';
 import Slider7 from '../../../assets/clasic.webp';
 import Slider8 from '../../../assets/plat.webp';
 import Slider9 from '../../../assets/plat1.webp';
+import Slider11 from '../../../assets/Smart.webp';
+import Slider12 from '../../../assets/semi.webp';
 import background from '../../../assets/background.webp';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,6 +22,8 @@ import { useNavigate } from 'react-router-dom';
 
 const HeroSection = ({ t }) => {
   const slides = [
+    { image: Slider11, text: t("Smart"), link: '/products/smart',size: "78*50cm" }, 
+    { image: Slider12, text: t("Semi Smart"), link: '/products/smart',size: "78*50cm" }, 
     { image: Slider2, text: t("Silver"), link: '/products/Silver',size: "50x43cm" }, 
     { image: Slider10, text: t("Silver"), link: '/products/Silver',size: "44x39cm" }, 
     { image: Slider8, text: t("Platinum"), link: '/products/platinum',size: "72x45cm" },

@@ -100,6 +100,9 @@ const scrollTo = () => {
       <Link to="/products" className="block text-gray-700 hover:text-main">
         {t('All Products')}
       </Link>
+        <Link to="/products/smart" className="block text-gray-700 hover:text-main">
+        {t('Smart')}
+      </Link>
       <Link to="/products/silver" className="block text-gray-700 hover:text-main">
         {t('Silver')}
       </Link>
@@ -176,8 +179,14 @@ const scrollTo = () => {
                       {t('Products')}
                     </Link>
                     <div className="absolute left-0 z-10 hidden group-hover:block bg-transparent shadow-lg rounded-md py-2 pt-5">
-                      <div className="bg-white left-0 shadow-lg rounded-md px-2 py-2">
+                      <div className="bg-white left-0  rounded-md px-2 sm:w-[120px] py-2">
 
+                      <Link
+                        to="/products/smart"
+                        className="block text-gray-700 hover:text-main px-2 py-1"
+                      >
+                        {t('Smart')}
+                      </Link>
                       <Link
                         to="/products/silver"
                         className="block text-gray-700 hover:text-main px-2 py-1"
@@ -207,6 +216,12 @@ const scrollTo = () => {
                         className="block text-gray-700 hover:text-main px-2 py-1"
                       >
                         {t('Diamond')}
+                      </Link>
+                        <Link
+                        to="/products"
+                        className="block text-gray-700 hover:text-main px-2 py-1"
+                      >
+                        {t('All Products')}
                       </Link>
                       </div>
                     </div>

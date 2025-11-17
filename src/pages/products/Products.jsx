@@ -13,6 +13,8 @@ import Slider7 from '../../assets/clasic.webp';
 import Slider8 from '../../assets/plat.webp';
 import Slider9 from '../../assets/plat1.webp';
 import Slider10 from '../../assets/slivers.webp';
+import Slider11 from '../../assets/Smart.webp';
+import Slider12 from '../../assets/semi.webp';
 import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
@@ -23,6 +25,13 @@ const Products = () => {
   const currentLanguage = i18n.language || i18n.options.fallbackLng[0];
 
   const products = [
+        {
+      category: 'Smart',
+      items: [
+        { image: Slider11, title: '78*50*23cm', description: t("Smart info"), link: '/products/smart' },
+        { image: Slider12, title: '78*50*23cm', description: t("Smart info"), link: '/products/smart' },
+      ],
+    },
     {
       category: 'Silver',
       items: [

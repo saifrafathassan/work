@@ -9,6 +9,7 @@ import Silver from "./pages/products/Silver";
 import Diamond from "./pages/products/Diamond";
 import Classic from "./pages/products/Classic";
 import Emerald from "./pages/products/Emerald";
+import Smart from "./pages/products/Smart"
 
 function App({ t }) {
 
@@ -21,6 +22,7 @@ function App({ t }) {
         <Route path="/contact" element={<Contact />}/>
         <Route path="/products" element={<Products />}/>
         <Route path="/products/platinum" element={<Platinum />} />
+        <Route path="/products/Smart" element={<Smart />} />
         <Route path="/products/silver" element={<Silver />} />
         <Route path="/products/diamond" element={<Diamond />} />
         <Route path="/products/classic" element={<Classic />} />
