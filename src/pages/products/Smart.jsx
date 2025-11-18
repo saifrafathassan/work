@@ -5,15 +5,24 @@ import Headerps from '../../components/Header/Headerps';
 import Back from '../../assets/background.webp';
 import ProductImage1 from '../../assets/Smart.webp';
 import ProductImage2 from '../../assets/semi.webp';
-import Thumbnail3 from '../../assets/2.webp'; // الصورة المصغرة الثالثة
+import Semi1 from '../../assets/semi1.webp';
+import Semi2 from '../../assets/semi2.webp';
+import Semi3 from '../../assets/semi3.webp';
+import Semi4 from '../../assets/semi4.webp';
+import Semi5 from '../../assets/semi5.webp';
+import Smart1 from '../../assets/smart1.webp';
+import Smart2 from '../../assets/smart2.webp';
+import Smart3 from '../../assets/smart3.webp';
+import Smart4 from '../../assets/smart4.webp';
+import Smart5 from '../../assets/smart5.webp';
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import {FaTimes} from 'react-icons/fa'
 import {IoMdArrowDropleft, IoMdArrowDropright} from 'react-icons/io'
 import Modal from 'react-modal';
 
-const images = [ProductImage1,  Thumbnail3];
-const images1 = [ProductImage2,  Thumbnail3];
+const images = [ProductImage1, Smart1, Smart2, Smart3, Smart4, Smart5];
+const images1 = [ProductImage2,  Semi1, Semi2, Semi3, Semi4, Semi5];
 
 const Smart = () => {
     const { t } = useTranslation();
@@ -147,7 +156,7 @@ const Smart = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-24 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage1,  ProductImage1].map((thumb, index) => (
+                            {[ProductImage1,  Smart1, Smart2, Smart3, Smart4, Smart5].map((thumb, index) => (
                                 <img 
                                 loading="lazy"
                                     key={index} 
@@ -263,7 +272,7 @@ const Smart = () => {
 
                         {/* الصور المصغرة */} 
                         <div className="absolute bottom-[-80px] sm:top-24 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
-                            {[ProductImage2, ProductImage2].map((thumb, index) => (
+                            {[ProductImage2, Semi1, Semi2, Semi3, Semi4, Semi5].map((thumb, index) => (
                                 <img 
                                 loading="lazy"
                                     key={index} 
