@@ -165,8 +165,8 @@ const Smart = () => {
                                     onClick={() => setCurrentImage(thumb)} 
                                     className={`cursor-pointer hover:scale-125 duration-200 border-2 rounded-md ${
                                         currentImage === thumb 
-                                            ? 'border-main w-16 h-16 object-contain' 
-                                            : 'border-gray-300 w-16 h-16 object-cover'
+                                            ? 'border-main w-14 h-16 object-contain' 
+                                            : 'border-gray-300 w-14 h-16 object-cover'
                                     }`}
                                 />
                             ))}
