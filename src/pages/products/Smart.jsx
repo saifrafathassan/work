@@ -155,7 +155,7 @@ const Smart = () => {
                         </div>
 
                         {/* الصور المصغرة */} 
-                        <div className="absolute bottom-[-80px] sm:top-24 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
+                        <div className="absolute bottom-[-80px] sm:top-24 sm:start-[-100px] flex sm:flex-col gap-1 w-[400px] sm:w-full justify-center sm:justify-normal">
                             {[ProductImage1,  Smart1, Smart2, Smart3, Smart4, Smart5].map((thumb, index) => (
                                 <img 
                                 loading="lazy"
