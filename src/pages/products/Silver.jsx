@@ -150,7 +150,7 @@ const Silver = () => {
                         </div>
 
                         {/* الصور المصغرة */} 
-                        <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
+                        <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-[5px] w-full justify-center sm:justify-normal">
                             {[ProductImage1, ProductImage3, ProductImage4, ProductImage5, Thumbnail3, Thumbnail4].map((thumb, index) => (
                                 <img 
                                 loading="lazy"
@@ -160,8 +160,8 @@ const Silver = () => {
                                     onClick={() => setCurrentImage(thumb)} 
                                     className={`cursor-pointer hover:scale-125 duration-200 border-2 rounded-md ${
                                         currentImage === thumb 
-                                            ? 'border-main w-16 h-16 object-contain' 
-                                            : 'border-gray-300 w-16 h-16 object-cover'
+                                            ? 'border-main w-[52px] h-14 object-contain' 
+                                            : 'border-gray-300 w-[52px] h-14 object-cover'
                                     }`}
                                 />
                             ))}
@@ -266,7 +266,7 @@ const Silver = () => {
                         </div>
 
                         {/* الصور المصغرة */} 
-                        <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
+                        <div className="absolute bottom-[-80px] sm:top-10 sm:start-[-100px] flex sm:flex-col gap-[5px] w-full justify-center sm:justify-normal">
                             {[ProductImage2, ProductImage3, ProductImage4, ProductImage5, Thumbnail3, Thumbnail4].map((thumb, index) => (
                                 <img 
                                 loading="lazy"
@@ -276,8 +276,8 @@ const Silver = () => {
                                     onClick={() => setCurrentImage1(thumb)} 
                                     className={`cursor-pointer hover:scale-125 duration-200 border-2 rounded-md ${
                                         currentImage1 === thumb 
-                                            ? 'border-main w-16 h-16 object-contain' 
-                                            : 'border-gray-300 w-16 h-16 object-cover'
+                                            ? 'border-main w-[52px] h-14 object-contain' 
+                                            : 'border-gray-300 w-[52px] h-14 object-cover'
                                     }`}
                                 />
                             ))}

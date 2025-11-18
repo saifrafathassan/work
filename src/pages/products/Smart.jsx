@@ -271,7 +271,7 @@ const Smart = () => {
                         </div>
 
                         {/* الصور المصغرة */} 
-                        <div className="absolute bottom-[-80px] sm:top-24 sm:start-[-100px] flex sm:flex-col gap-1 w-full justify-center sm:justify-normal">
+                        <div className="absolute bottom-[-80px] sm:top-24 sm:start-[-100px] flex sm:flex-col gap-[5px] w-full justify-center sm:justify-normal">
                             {[ProductImage2, Semi1, Semi2, Semi3, Semi4, Semi5].map((thumb, index) => (
                                 <img 
                                 loading="lazy"
@@ -281,8 +281,8 @@ const Smart = () => {
                                     onClick={() => setCurrentImage1(thumb)} 
                                     className={`cursor-pointer hover:scale-125 duration-200 border-2 rounded-md ${
                                         currentImage1 === thumb 
-                                            ? 'border-main w-16 h-16 object-contain' 
-                                            : 'border-gray-300 w-16 h-16 object-cover'
+                                            ? 'border-main w-[52px] h-14 object-contain' 
+                                            : 'border-gray-300 w-[52px] h-14 object-cover'
                                     }`}
                                 />
                             ))}
