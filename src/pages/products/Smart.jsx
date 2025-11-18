@@ -178,24 +178,26 @@ const Smart = () => {
                     <div className="md:w-1/2 text-center sm:text-start sm:px-12 sm:mt-0 mt-20">
                     {/* العنوان مع خط رمادي */}
                     <h2 className="text-2xl sm:text-3xl font-bold text-main mb-4 hover:text-blue-500 duration-200 border-b-[1px] border-gray-300 pb-5">
-                        {t('Smart stainless steel')} 78*50{t('cm')}
+                        {t('Smart stainless steel')} 23x50x78{t('cm')}
                     </h2>
 
                     {/* الفقرة مع خط رمادي */}
                     <p className="text-gray-700 text-lg sm:text-xl border-b-[1px] border-gray-300 pb-5 mb-4">
                         {t('Smart info')}
                     </p>
-                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Size')}</span>  78*50{t('cm')}</p>
+                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Size')}</span>  23x50x78{t('cm')}</p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('color')}</span> {t('gray')}</p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Exchangetype')}</span> {t('network')}</p>
-                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Drainer size:')}</span>  110{t('mm')}</p>
+                    <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Drainer size:')}</span>  {t('smart size')}</p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Materials')}</span> {t('smart material')}</p>
                     <p className="text-gray-700 text-xl border-b-[1px] border-gray-300 pb-5 mb-4"><span className='font-bold text-black pe-2'>{t('Warranty')}</span> {t('Lifetime')}</p>
-                    <h3 className='text-gray-700 text-lg sm:text-2xl mt-12 border-b-[1px] border-gray-300 pb-5 mb-4'>{t('Features')}</h3>
-                    <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features1')}</p>
-                    <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features2')}</p>
-                    <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features3')}</p>
-                    <p className="text-black text-xl border-b-[1px] border-gray-300 pb-5 mb-4 font-bold">{t('Features4')}</p>
+                    <h3 className='text-gray-700 text-lg sm:text-2xl mt-12 border-b-[1px] border-gray-300 pb-3 mb-2'>{t('Features')}</h3>
+                    <p className="text-black text-lg border-b-[1px] border-gray-300 pb-3 mb-2 font-bold">{t('Featursmart1')}</p>
+                    <p className="text-black text-lg border-b-[1px] border-gray-300 pb-3 mb-2 font-bold">{t('Featursmart2')}</p>
+                    <p className="text-black text-lg border-b-[1px] border-gray-300 pb-3 mb-2 font-bold">{t('Featursmart3')}</p>
+                    <p className="text-black text-lg border-b-[1px] border-gray-300 pb-3 mb-2 font-bold">{t('Featursmart4')}</p>
+                    <p className="text-black text-lg border-b-[1px] border-gray-300 pb-3 mb-2 font-bold">{t('Featursmart5')}</p>
+                    <p className="text-black text-lg border-b-[1px] border-gray-300 pb-3 mb-2 font-bold">{t('Featursmart6')}</p>
                     </div>
 
                     </div>

@@ -28,8 +28,8 @@ const Products = () => {
         {
       category: 'Smart',
       items: [
-        { image: Slider11, title: '78*50*23cm', description: t("Smart info"), link: '/products/smart' },
-        { image: Slider12, title: '78*50*23cm', description: t("Smart info"), link: '/products/smart' },
+        { image: Slider11, title: '23x50x78cm', description: t("Smart info"), link: '/products/smart' },
+        { image: Slider12, title: '23x50x78cm', description: t("Smart info"), link: '/products/smart' },
       ],
     },
     {
