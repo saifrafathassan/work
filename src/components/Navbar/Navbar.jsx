@@ -17,22 +17,29 @@ const Navbar = ({ t }) => {
 
   // scrool to top button
 useEffect(() => {
-  window.addEventListener("scroll", () => {
+  const handleScroll = () => {
     if (window.pageYOffset > 500) {
       setShowButton(true);
     } else {
       setShowButton(false);
     }
-  });
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
 }, []);
 
-const scrollTo = () => {
-  const c = document.documentElement.scrollTop || document.body.scrollTop;
-  if (c > 0) {
-    window.requestAnimationFrame(scrollTo);
-    window.scrollTo(0, c - c / 8); 
-  }
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 };
+
 
   return (
     <div>
@@ -246,9 +253,10 @@ const scrollTo = () => {
         </nav>
       </header>
       {showButton && (
-        <button aria-label="Scrool to top" className='bg-main flex justify-center items-center rounded-full h-[50px] w-[50px] fixed right-0 bottom-0 mb-[20px] sm:mb-[40px] mr-[30px] sm:mr-[40px] z-[1000] hover:bg-white duration-300 hover:border-black border-white border-2' onClick={scrollTo}>
-          <IoIosArrowUp className="text-white hover:text-black duration-300" size={30}/>
-        </button>
+<button aria-label="Scrool to top" className='bg-main flex justify-center items-center rounded-full h-[50px] w-[50px] fixed right-0 bottom-0 mb-[20px] sm:mb-[40px] mr-[30px] sm:mr-[40px] z-[1000] hover:bg-white duration-300 hover:border-black border-white border-2' onClick={scrollToTop}>
+  <IoIosArrowUp className="text-white hover:text-black duration-300" size={30}/>
+</button>
+
       )}
     </div>
   )
